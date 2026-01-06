@@ -1,0 +1,37 @@
+{
+  "inputs": {
+    "main": {
+      "items": [
+        {
+          "deps": [], 
+          "ref": "unlabeled_customers"
+        }
+      ]
+    }
+  }, 
+  "neverRecomputeExistingPartitions": false, 
+  "optionalDependencies": false, 
+  "outputs": {
+    "main": {
+      "items": [
+        {
+          "ref": "unlabeled_customers_prepared"
+        }
+      ]
+    }
+  }, 
+  "params": {
+    "engineType": "DSS"
+  }, 
+  "partitionDeps": [], 
+  "tags": [], 
+  "type": "shaker", 
+  "versionTag": {
+    "lastModifiedBy": {
+      "displayName": "Administrator", 
+      "login": "admin"
+    }, 
+    "lastModifiedOn": 1431017378530, 
+    "versionNumber": 5
+  }
+}

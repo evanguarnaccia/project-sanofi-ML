@@ -1,0 +1,150 @@
+{
+  "checklists": {},
+  "creationTag": {
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1431017164073
+  },
+  "description": "",
+  "listed": true,
+  "name": "Cluster_labels counts",
+  "owner": "admin",
+  "params": {
+    "datasetSmartName": "customers_within_segments",
+    "def": {
+      "colorOptions": {
+        "colorPalette": "default",
+        "singleColor": "#659a88",
+        "transparency": 0.9
+      },
+      "filters": [],
+      "genericDimension0": [
+        {
+          "column": "State",
+          "filters": [],
+          "generateOthersCategory": false,
+          "isA": "dimension",
+          "maxValues": 53,
+          "numParams": {
+            "emptyBinsMode": "ZEROS"
+          },
+          "oneTickPerBin": "NO",
+          "possibleNewFilters": [
+            {
+              "group": "Measure values",
+              "label": "Count of records",
+              "measureFilterId": 0,
+              "type": "MEASURE_VALUES"
+            }
+          ],
+          "possibleSorts": [
+            {
+              "label": "Natural ordering",
+              "sortAscending": true,
+              "type": "NATURAL"
+            },
+            {
+              "label": "Count of records, descending",
+              "measureIdx": 0,
+              "type": "AGGREGATION"
+            },
+            {
+              "label": "Count of records, ascending",
+              "measureIdx": 0,
+              "sortAscending": true,
+              "type": "AGGREGATION"
+            }
+          ],
+          "sort": {
+            "label": "Count of records, descending",
+            "measureIdx": 0,
+            "type": "AGGREGATION"
+          },
+          "type": "ALPHANUM"
+        }
+      ],
+      "genericDimension1": [
+        {
+          "column": "cluster_labels",
+          "filters": [],
+          "generateOthersCategory": true,
+          "isA": "dimension",
+          "maxValues": 20,
+          "numParams": {
+            "emptyBinsMode": "ZEROS"
+          },
+          "oneTickPerBin": "NO",
+          "possibleNewFilters": [
+            {
+              "group": "Measure values",
+              "label": "Count of records",
+              "measureFilterId": 0,
+              "type": "MEASURE_VALUES"
+            }
+          ],
+          "possibleSorts": [
+            {
+              "label": "Natural ordering",
+              "sortAscending": true,
+              "type": "NATURAL"
+            },
+            {
+              "label": "Count of records, descending",
+              "measureIdx": 0,
+              "type": "AGGREGATION"
+            },
+            {
+              "label": "Count of records, ascending",
+              "measureIdx": 0,
+              "sortAscending": true,
+              "type": "AGGREGATION"
+            }
+          ],
+          "sort": {
+            "label": "Natural ordering",
+            "sortAscending": true,
+            "type": "NATURAL"
+          },
+          "type": "ALPHANUM"
+        }
+      ],
+      "genericMeasures": [
+        {
+          "displayAxis": "axis1",
+          "displayType": "column",
+          "displayed": true,
+          "function": "COUNT",
+          "isA": "measure",
+          "type": "NUMERICAL"
+        }
+      ],
+      "includeZero": true,
+      "name": "Cluster_labels counts",
+      "showLegend": true,
+      "smoothing": false,
+      "thumbnailData": "data:image/png;base64,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",
+      "type": "stacked_columns",
+      "userEditedName": true,
+      "valuesInChartDisplayOptions": {},
+      "variant": "stacked_100",
+      "xAxisFormatting": {},
+      "yAxesFormatting": [
+        {}
+      ]
+    },
+    "refreshableSelection": {
+      "_refreshTrigger": 0,
+      "autoRefreshSample": false,
+      "selection": {
+        "maxRecords": 30000,
+        "partitionSelectionMethod": "ALL",
+        "samplingMethod": "HEAD_SEQUENTIAL",
+        "targetRatio": 0.02
+      }
+    }
+  },
+  "shortDesc": "",
+  "tags": [],
+  "type": "chart"
+}

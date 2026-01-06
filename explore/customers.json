@@ -1,0 +1,145 @@
+{
+  "charts": [
+    {
+      "def": {
+        "axis1LogScale": false,
+        "axis2LogScale": false,
+        "boxplotBreakdownDim": [],
+        "boxplotValue": [],
+        "bubblesOptions": {
+          "defaultRadius": 5.0
+        },
+        "colorMeasure": [],
+        "colorOptions": {
+          "ccScaleMode": "NORMAL",
+          "colorPalette": "default",
+          "singleColor": "#659a88",
+          "transparency": 0.9
+        },
+        "disableSafetyLimits": false,
+        "filters": [],
+        "genericDimension0": [
+          {
+            "column": "VMail Message",
+            "filters": [],
+            "generateOthersCategory": true,
+            "isA": "dimension",
+            "maxValues": 100,
+            "numParams": {
+              "binSize": 100,
+              "emptyBinsMode": "ZEROS",
+              "mode": "FIXED_NB",
+              "nbBins": 30
+            },
+            "oneTickPerBin": "NO",
+            "sort": {
+              "label": "Natural ordering",
+              "sortAscending": true,
+              "type": "NATURAL"
+            },
+            "type": "NUMERICAL"
+          }
+        ],
+        "genericDimension1": [],
+        "genericMeasures": [
+          {
+            "computeMode": "NORMAL",
+            "displayAxis": "axis1",
+            "displayType": "column",
+            "displayed": true,
+            "function": "COUNT",
+            "isA": "measure",
+            "type": "NUMERICAL"
+          }
+        ],
+        "geometry": [],
+        "groupDimension": [],
+        "hexbinRadius": 20,
+        "includeZero": true,
+        "mapGridOptions": {
+          "gridLatDeg": 0.6,
+          "gridLonDeg": 0.6
+        },
+        "mapOptions": {
+          "lockSquareGrid": false,
+          "tilesLayer": "mapquest-std"
+        },
+        "name": "Chart",
+        "showLegend": true,
+        "sizeMeasure": [],
+        "smoothing": false,
+        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAAA00lEQVRoQ+2aMQrCQBBFdwSxNLWgXsicRSvjEUzwGHYWNrmK9lp4grQ6MoGIILKNCrO+NNmwy7Lz9z2miYQ/e6Srd1rUFxufytko5QwomBtOjG+QBmmQ9p0ADuOwb4JfTg/SIA3SvhPAYRz2TTBtCYdxGId9J4DDOOybYPowDuMwDvtOAIdx2DfB9GEc/pbD2WKfGV/DQf/4zJledWvf502+/IU9H7nhSVEf2sNqaOwlEsZ605X0ZG0Bdj/MxAp6t1ZVd20oVT6P7RGbfxQcW5jK/B2YErYpLfjnfQAAAABJRU5ErkJggg==",
+        "tooltipMeasures": [],
+        "type": "multi_columns_lines",
+        "uaColor": [],
+        "uaSize": [],
+        "uaTooltip": [],
+        "uaXDimension": [],
+        "uaYDimension": [],
+        "useLiveProcessingIfAvailable": true,
+        "userEditedName": true,
+        "valuesInChartDisplayOptions": {},
+        "variant": "normal",
+        "xAxisFormatting": {
+          "isLogScale": false
+        },
+        "xDimension": [],
+        "xMeasure": [],
+        "yAxesFormatting": [
+          {
+            "axisTitle": "",
+            "isLogScale": false
+          }
+        ],
+        "yAxisLabel": "",
+        "yDimension": [],
+        "yMeasure": []
+      },
+      "refreshableSelection": {
+        "_refreshTrigger": 0,
+        "autoRefreshSample": false,
+        "selection": {
+          "maxRecords": 30000,
+          "partitionSelectionMethod": "ALL",
+          "samplingMethod": "HEAD_SEQUENTIAL",
+          "targetRatio": 0.02
+        }
+      }
+    }
+  ],
+  "script": {
+    "analysisColumnData": {},
+    "charts": [],
+    "chartsEngine": "LINO",
+    "coloring": {
+      "individualColumns": [],
+      "scheme": "MEANING_AND_STATUS",
+      "valueColoringMode": "HASH"
+    },
+    "columnsSelection": {
+      "mode": "ALL"
+    },
+    "explorationFilters": [],
+    "explorationSampling": {
+      "_refreshTrigger": 0,
+      "autoRefreshSample": false,
+      "selection": {
+        "maxRecords": 30000,
+        "partitionSelectionMethod": "ALL",
+        "samplingMethod": "HEAD_SEQUENTIAL",
+        "targetRatio": 0.02
+      }
+    },
+    "exploreUIParams": {
+      "autoRefresh": true
+    },
+    "globalSearchQuery": "",
+    "previewMode": "ALL_ROWS",
+    "steps": [],
+    "tags": [],
+    "vizSampling": {
+      "_refreshTrigger": 0,
+      "autoRefreshSample": false
+    }
+  }
+}

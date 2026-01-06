@@ -1,0 +1,175 @@
+{
+  "checklists": {
+    "checklists": []
+  },
+  "creationTag": {
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1486131202177,
+    "versionNumber": 0
+  },
+  "dashboardCreationId": "4A29MtD",
+  "description": "",
+  "listed": false,
+  "name": "Count by State and Churn",
+  "owner": "admin",
+  "params": {
+    "datasetSmartName": "customers_prepared",
+    "def": {
+      "axis1LogScale": false,
+      "axis2LogScale": false,
+      "boxplotBreakdownDim": [],
+      "boxplotValue": [],
+      "bubblesOptions": {
+        "defaultRadius": 5.0
+      },
+      "colorMeasure": [],
+      "colorOptions": {
+        "ccScaleMode": "NORMAL",
+        "colorPalette": "default",
+        "singleColor": "#659a88",
+        "transparency": 0.9
+      },
+      "colorPaletteType": "LINEAR",
+      "computeMode": "NORMAL",
+      "disableSafetyLimits": false,
+      "filters": [],
+      "genericDimension0": [
+        {
+          "column": "State",
+          "filters": [],
+          "generateOthersCategory": true,
+          "isA": "dimension",
+          "maxValues": 50,
+          "numParams": {
+            "emptyBinsMode": "ZEROS"
+          },
+          "oneTickPerBin": "NO",
+          "sort": {
+            "label": "Natural ordering",
+            "sortAscending": true,
+            "type": "NATURAL"
+          },
+          "type": "ALPHANUM"
+        }
+      ],
+      "genericDimension1": [
+        {
+          "column": "Churn",
+          "filters": [],
+          "generateOthersCategory": true,
+          "isA": "dimension",
+          "maxValues": 100,
+          "numParams": {
+            "binSize": 100,
+            "emptyBinsMode": "ZEROS",
+            "mode": "TREAT_AS_ALPHANUM",
+            "nbBins": 5
+          },
+          "oneTickPerBin": "NO",
+          "sort": {
+            "label": "Natural ordering",
+            "sortAscending": true,
+            "type": "NATURAL"
+          },
+          "type": "NUMERICAL"
+        }
+      ],
+      "genericMeasures": [
+        {
+          "computeMode": "NORMAL",
+          "computeModeDim": 1,
+          "displayAxis": "axis1",
+          "displayType": "column",
+          "displayed": true,
+          "function": "COUNT",
+          "isA": "measure",
+          "type": "NUMERICAL"
+        }
+      ],
+      "geometry": [],
+      "groupDimension": [],
+      "hexbinNumber": 0,
+      "hexbinRadius": 20,
+      "includeZero": true,
+      "mapGridOptions": {
+        "gridLatDeg": 0.6,
+        "gridLonDeg": 0.6
+      },
+      "mapOptions": {
+        "lockSquareGrid": false,
+        "tilesLayer": "mapquest-std"
+      },
+      "name": "Count by State and Churn",
+      "pieOptions": {
+        "donutHoleSize": 50.0
+      },
+      "scatterOptions": {
+        "equalScales": false,
+        "identityLine": false
+      },
+      "showLegend": true,
+      "showXAxis": false,
+      "sizeMeasure": [],
+      "smoothing": false,
+      "strokeWidth": 1,
+      "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAAB9UlEQVRoQ+1YPUsDQRCdCRaCEFAQJUUEG6ONGIKFYG8h+PFHJJW1pVX8Af6GQCDYWSkiGGIj4SSgXOFpIigKgtWtXMheNpu9zSW7BA7nmtxlb3bmvTcfyyH8swtlvOWbN88aBwguAtZ9YA4iOuK+zGdZBJYDwDwArFrzKW10uLWYEf8iwEvHVa+0V+iQUqzUgN+rFAjWg0v1ztVzq7W9vPA7KYWjYh2qcACYg5A3UT1r390vxErpYqXWSek4RIsx6O75fmMBfnz//liZT89xB+KvrHwQ9GXz9afaeJkpKQDfPrXhwvHgZGc9rGEd4CjS5ewSn/l9EJt7uquvYZXC4gbDmksAOHQeA3CxUssDYNi0uL2oNvcprkUBFP1PBHAfIYy5ZwebYZc+v27CQ/sL0tNTocI6wFFE95EqECyWF48jtsIyq8OUVa53AR+V7xyQxpIPLIsMcqkUUyqs86cDLNtNHDAA1hkDq4BFUBuZ2ca997kWRdDIgMdSlhsx5o4K2MifwpgAy6TwLm2FaVK4R2NU07JCtLAJpTSldPcsbSW1qIaphgdOWlYyi5pWj4GBLx40h01yjJoWNS1qWiYVpLKloyUdLeloaVBVNJZoLNFYMiggpSmNJRpLNJYMqioJY8kAXiJMBz4AJCJqgyAJsAF5iTD9Ayvo1Ef+vVlgAAAAAElFTkSuQmCC",
+      "tooltipMeasures": [],
+      "type": "stacked_columns",
+      "uaColor": [],
+      "uaShape": [],
+      "uaSize": [],
+      "uaTooltip": [],
+      "uaXDimension": [],
+      "uaYDimension": [],
+      "useLiveProcessingIfAvailable": true,
+      "userEditedName": true,
+      "valuesInChartDisplayOptions": {},
+      "variant": "stacked_100",
+      "xAxisFormatting": {
+        "isLogScale": false
+      },
+      "xAxisMode": "NORMAL",
+      "xDimension": [],
+      "xMeasure": [],
+      "yAxesFormatting": [
+        {
+          "isLogScale": false
+        }
+      ],
+      "yAxisMode": "NORMAL",
+      "yDimension": [],
+      "yMeasure": []
+    },
+    "engineType": "LINO",
+    "refreshableSelection": {
+      "_refreshTrigger": 0,
+      "autoRefreshSample": false,
+      "selection": {
+        "filter": {
+          "distinct": false,
+          "enabled": false
+        },
+        "latestPartitionsN": 1,
+        "maxReadUncompressedBytes": -1,
+        "maxRecords": 30000,
+        "partitionSelectionMethod": "ALL",
+        "samplingMethod": "HEAD_SEQUENTIAL",
+        "targetRatio": 0.02,
+        "useMemTable": false,
+        "withinFirstN": -1
+      }
+    }
+  },
+  "shortDesc": "",
+  "tags": [],
+  "type": "chart",
+  "versionTag": {
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1486131202177,
+    "versionNumber": 0
+  }
+}

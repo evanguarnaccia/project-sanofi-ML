@@ -1,0 +1,130 @@
+{
+  "checklists": {},
+  "creationTag": {
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1431017846570
+  },
+  "description": "",
+  "listed": true,
+  "name": "Churner by Total_Charge and VMail_Message",
+  "owner": "admin",
+  "params": {
+    "datasetSmartName": "customers_prepared",
+    "def": {
+      "axis1LogScale": false,
+      "axis2LogScale": false,
+      "boxplotBreakdownDim": [],
+      "boxplotValue": [],
+      "bubblesOptions": {
+        "defaultRadius": 5.0
+      },
+      "colorMeasure": [],
+      "colorOptions": {
+        "ccScaleMode": "NORMAL",
+        "colorPalette": "gyr1",
+        "singleColor": "#659a88",
+        "transparency": 0.9
+      },
+      "disableSafetyLimits": false,
+      "filters": [
+        {
+          "allValuesInSample": false,
+          "column": "VMail_Plan",
+          "columnType": "ALPHANUM",
+          "excludeOtherValues": false,
+          "excludedValues": {
+            "___dku_no_value___": true
+          },
+          "explicitExclude": false,
+          "filterSelectionType": "MULTI_SELECT",
+          "filterType": "ALPHANUM_FACET",
+          "id": "8ulQ3rpytpdudqVg",
+          "isA": "filter"
+        }
+      ],
+      "genericDimension0": [],
+      "genericDimension1": [],
+      "genericMeasures": [],
+      "geometry": [],
+      "groupDimension": [],
+      "hexbinRadius": 20,
+      "includeZero": true,
+      "mapGridOptions": {
+        "gridLatDeg": 0.6,
+        "gridLonDeg": 0.6
+      },
+      "mapOptions": {
+        "lockSquareGrid": false,
+        "tilesLayer": "mapquest-std"
+      },
+      "name": "Churner by Total_Charge and VMail_Message",
+      "showLegend": true,
+      "sizeMeasure": [],
+      "smoothing": false,
+      "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAAD+klEQVRoQ+1aW4gbZRQ+ZxJSrSY5w2Kta8EtXXVBqMWambZKffK2L775oj74UARFunTZzIJXxIedWTdvXtAHKV4Q662Fqk8+Se1MrFAf7IXWtljWamXnTNLGbWnmyARGQpxtM5vZkHUzL0n+nNv3fT//f/4/QVhhD64wvNAH/H9XvGcVzh3MPVXZUvkgaQEagIvF4mHLsu5OOngvxutZhZeKrMQBU5lKXOBdUQWrtvqDq7tbw+/Ipn2CclEB5YFgzNXcweCVbDrNOg+pjjobjiVFQOKAkypsqeJcFXBchqlMj3GB97YWG8Zpjhe898EfqKfr6y7cc+F86NNsQw6dYY1vi/JfLCF9heMy96eqzq5x3cHcgdwwpOGhFKReFJFLgDDLGt9HDp1gjYeDuKFS5FCNNV7dmotsOs8635Skoq05GgobhnHWNM11ccEuR/v+lF6UakchCyNQ/c9iVVbf8cUf8jTvEXLoQ9b4SXLoPdZ4R76cfxsFjyi+8sXclrmzAoCqTW+wzuNBnLydf8vTvWefsOj9j4r89KLqinDqKxzZMCyiASCbTgnIxwj4DCJePvYwQLC4kUM/IeAtIjKPiKtaGwsqUxUFq8E4OVRnjVNRW1awsAnK51zg5+Oo31c4DlsLzQYf/Ve9gvduo0106DgC3tjcOgbqhJ9PryXetBd2ss67m7euKFWb850CuG49wHzcesPTkm9ZVjB1JG6A5Wbf1SmdLWfvrBaqx1RH/drV3NHGDLDpK0QccTV3JCQv7+S/8TTvUSrTbvHlgO/7v1e3VvclQW5XASdRcKcx+oA7ZZBsOs4639G66DS2EZH9ft03Ktsqc+ECJSLPAcLrrPFdneZux7+vcDssLWTTesoJT1Kt9sHJqrKtcqIx/imk4HGod5I3jm+4Le0HgActy8rEcV6Otl2f0kHLyTqvbyar3ZsVcugka7yhE6K7DriTYpPw/RfwxMTEhunp6ZNJBO3lGF1VmGwqsR59hdstkroKuFugrpZnZQIeHx/fPDMzc6gXFFjqGlamwkvNai/Fv6bC2R+z99eV+q+1VbW/6CJ9BwB7AOB2QWEU3Dh8BoaqN8DA9jJk9owC5CtQ87IwuPEIKLm/Eb/fLLB6HsQHwCspgJfeBHhlJzT+etC4bUAQ9AH1wwAHNwFoPwOcWwPw29qGwRUBuJSuQ+aXUbgMIjVBTCsi3/qI1/sin6QRX0Df31FXlFtvZv7yj1yupCAeVQDmBjzvs5Ds4FYUAeSagHtJnSRqaQuwYRi7TNMsLZTQMIySaZqRP5EWi8XXLMt6OcrXMIxzpmkGWsZ+xsbGKJPJbLcsK+omBCcnJ++dmpoqtwZuC3DsanrY4R9W6Ks4df7bvQAAAABJRU5ErkJggg==",
+      "tooltipMeasures": [],
+      "type": "scatter",
+      "uaColor": [
+        {
+          "adminLevel": 0,
+          "column": "Churn",
+          "treatAsAlphanum": false,
+          "type": "NUMERICAL"
+        }
+      ],
+      "uaSize": [],
+      "uaTooltip": [],
+      "uaXDimension": [
+        {
+          "column": "Total_Charge",
+          "isA": "ua",
+          "sortAscending": false,
+          "sortBy": "NATURAL",
+          "treatAsAlphanum": false,
+          "type": "NUMERICAL"
+        }
+      ],
+      "uaYDimension": [
+        {
+          "column": "VMail_Message",
+          "isA": "ua",
+          "sortAscending": false,
+          "sortBy": "NATURAL",
+          "treatAsAlphanum": false,
+          "type": "NUMERICAL"
+        }
+      ],
+      "useLiveProcessingIfAvailable": true,
+      "userEditedName": true,
+      "valuesInChartDisplayOptions": {},
+      "variant": "normal",
+      "xAxisFormatting": {
+        "isLogScale": false
+      },
+      "xDimension": [],
+      "xMeasure": [],
+      "yAxesFormatting": [
+        {
+          "isLogScale": false
+        }
+      ],
+      "yDimension": [],
+      "yMeasure": []
+    },
+    "refreshableSelection": {
+      "_refreshTrigger": 0,
+      "autoRefreshSample": false,
+      "selection": {
+        "maxRecords": 30000,
+        "partitionSelectionMethod": "ALL",
+        "samplingMethod": "HEAD_SEQUENTIAL",
+        "targetRatio": 0.02
+      }
+    }
+  },
+  "shortDesc": "",
+  "tags": [],
+  "type": "chart"
+}

@@ -1,0 +1,30 @@
+{
+  "type": "jupyter",
+  "params": {
+    "notebookSmartName": "Correlations analysis on customers_prepared (admin)",
+    "exportTimestamp": 0,
+    "loadLast": true
+  },
+  "owner": "admin",
+  "listed": false,
+  "name": "Correlations analysis on customers_prepared (admin) (2017-02-03 02:58)",
+  "dashboardCreationId": "hfhHz3Y",
+  "versionTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1486133909067
+  },
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1486133909067
+  },
+  "tags": [],
+  "checklists": {
+    "checklists": []
+  }
+}

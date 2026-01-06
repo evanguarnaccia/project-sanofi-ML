@@ -1,0 +1,39 @@
+{
+  "charts": [
+    {
+      "def": {
+        "colorOptions": {
+          "colorPalette": "default",
+          "singleColor": "#659a88",
+          "transparency": 0.9
+        },
+        "filters": [],
+        "genericDimension0": [],
+        "genericDimension1": [],
+        "genericMeasures": [],
+        "includeZero": true,
+        "name": "Chart",
+        "showLegend": true,
+        "smoothing": false,
+        "type": "multi_columns_lines",
+        "userEditedName": true,
+        "valuesInChartDisplayOptions": {},
+        "variant": "normal",
+        "xAxisFormatting": {},
+        "yAxesFormatting": [
+          {}
+        ]
+      },
+      "refreshableSelection": {
+        "_refreshTrigger": 0,
+        "autoRefreshSample": false,
+        "selection": {
+          "maxRecords": 30000,
+          "partitionSelectionMethod": "ALL",
+          "samplingMethod": "HEAD_SEQUENTIAL",
+          "targetRatio": 0.02
+        }
+      }
+    }
+  ]
+}

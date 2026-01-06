@@ -1,0 +1,42 @@
+{
+    "inputs": {
+        "model": {
+            "items": [
+                {
+                    "ref": "UYFld51u", 
+                    "deps": []
+                }
+            ]
+        }, 
+        "main": {
+            "items": [
+                {
+                    "ref": "customers_prepared", 
+                    "deps": []
+                }
+            ]
+        }
+    }, 
+    "versionTag": {
+        "lastModifiedBy": {
+            "login": "admin", 
+            "displayName": "Administrator"
+        }, 
+        "lastModifiedOn": 1431076237808, 
+        "versionNumber": 1
+    }, 
+    "tags": [], 
+    "outputs": {
+        "main": {
+            "items": [
+                {
+                    "ref": "customers_within_segments"
+                }
+            ]
+        }
+    }, 
+    "optionalDependencies": false, 
+    "params": {}, 
+    "neverRecomputeExistingPartitions": false, 
+    "type": "clustering_scoring"
+}

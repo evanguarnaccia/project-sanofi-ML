@@ -1,0 +1,6 @@
+{
+  "keptInputColumns": [],
+  "filterInputColumns": false,
+  "removeOutliers": false,
+  "sparkParams": {}
+}

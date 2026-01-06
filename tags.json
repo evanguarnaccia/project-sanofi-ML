@@ -1,0 +1,28 @@
+{
+  "tags": {
+    "sample_project": {
+      "color": "#d66b9b"
+    },
+    "within_dss:Use cases": {
+      "color": "#d66b9b"
+    },
+    "downloads": {
+      "color": "#de1ea5"
+    },
+    "imported": {
+      "color": "#263238"
+    },
+    "SAMPLE_PROJECT": {
+      "color": "#1ac2ab"
+    },
+    "sample": {
+      "color": "#123883"
+    },
+    "gallery": {
+      "color": "#FFD83D"
+    },
+    "creator_admin": {
+      "color": "#1ac2ab"
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "type": "saved-model_report",
+  "params": {
+    "savedModelSmartId": "UYFld51u"
+  },
+  "owner": "admin",
+  "listed": false,
+  "name": "Full report of model Segments model (KMEANS)",
+  "dashboardCreationId": "Sf9Bzu5",
+  "versionTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1486140423204
+  },
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1486140423204
+  },
+  "tags": [],
+  "checklists": {
+    "checklists": []
+  }
+}

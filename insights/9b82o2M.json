@@ -1,0 +1,224 @@
+{
+  "checklists": {
+    "checklists": []
+  },
+  "creationTag": {
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1486131181575,
+    "versionNumber": 0
+  },
+  "dashboardCreationId": "Sf9Bzu5",
+  "description": "",
+  "listed": false,
+  "name": "Churnability",
+  "owner": "admin",
+  "params": {
+    "datasetSmartName": "unlabeled_customers_churn_prediction",
+    "def": {
+      "axis1LogScale": false,
+      "axis2LogScale": false,
+      "boxplotBreakdownDim": [],
+      "boxplotValue": [],
+      "bubblesOptions": {
+        "defaultRadius": 5.0
+      },
+      "colorMeasure": [],
+      "colorOptions": {
+        "ccScaleMode": "NORMAL",
+        "colorPalette": "dku_dss_next",
+        "singleColor": "#659a88",
+        "transparency": 0.9
+      },
+      "colorPaletteType": "LINEAR",
+      "computeMode": "NORMAL",
+      "disableSafetyLimits": false,
+      "filters": [
+        {
+          "allValuesInSample": false,
+          "column": "prediction",
+          "columnType": "ALPHANUM",
+          "excludeOtherValues": false,
+          "excludedValues": {
+            "False": true
+          },
+          "explicitExclude": false,
+          "filterSelectionType": "MULTI_SELECT",
+          "filterType": "ALPHANUM_FACET",
+          "id": "nDkuYkjX5ApMbTL8"
+        }
+      ],
+      "genericDimension0": [
+        {
+          "column": "proba_True",
+          "filters": [],
+          "generateOthersCategory": true,
+          "isA": "dimension",
+          "maxValues": 100,
+          "numParams": {
+            "binSize": 100,
+            "emptyBinsMode": "ZEROS",
+            "mode": "FIXED_NB",
+            "nbBins": "20"
+          },
+          "oneTickPerBin": "NO",
+          "possibleSorts": [
+            {
+              "label": "Natural ordering",
+              "sortAscending": true,
+              "type": "NATURAL"
+            },
+            {
+              "label": "Count of records, descending",
+              "measureIdx": 0,
+              "type": "AGGREGATION"
+            },
+            {
+              "label": "Count of records, ascending",
+              "measureIdx": 0,
+              "sortAscending": true,
+              "type": "AGGREGATION"
+            }
+          ],
+          "sort": {
+            "label": "Natural ordering",
+            "sortAscending": true,
+            "type": "NATURAL"
+          },
+          "type": "NUMERICAL"
+        }
+      ],
+      "genericDimension1": [
+        {
+          "column": "cluster_labels",
+          "filters": [],
+          "generateOthersCategory": true,
+          "isA": "dimension",
+          "maxValues": 20,
+          "numParams": {
+            "emptyBinsMode": "ZEROS"
+          },
+          "oneTickPerBin": "NO",
+          "possibleSorts": [
+            {
+              "label": "Natural ordering",
+              "sortAscending": true,
+              "type": "NATURAL"
+            },
+            {
+              "label": "Count of records, descending",
+              "measureIdx": 0,
+              "type": "AGGREGATION"
+            },
+            {
+              "label": "Count of records, ascending",
+              "measureIdx": 0,
+              "sortAscending": true,
+              "type": "AGGREGATION"
+            }
+          ],
+          "sort": {
+            "label": "Count of records, descending",
+            "measureIdx": 0,
+            "type": "AGGREGATION"
+          },
+          "type": "ALPHANUM"
+        }
+      ],
+      "genericMeasures": [
+        {
+          "computeModeDim": 1,
+          "displayAxis": "axis1",
+          "displayType": "column",
+          "displayed": true,
+          "function": "COUNT",
+          "isA": "measure",
+          "type": "NUMERICAL"
+        }
+      ],
+      "geometry": [],
+      "groupDimension": [],
+      "hexbinNumber": 0,
+      "hexbinRadius": 0,
+      "includeZero": true,
+      "mapGridOptions": {
+        "gridLatDeg": 0.6,
+        "gridLonDeg": 0.6
+      },
+      "mapOptions": {
+        "lockSquareGrid": false,
+        "tilesLayer": "cartodb-positron"
+      },
+      "name": "Churnability",
+      "pieOptions": {
+        "donutHoleSize": 50.0
+      },
+      "scatterOptions": {
+        "equalScales": false,
+        "identityLine": false
+      },
+      "showLegend": true,
+      "showXAxis": false,
+      "sizeMeasure": [],
+      "smoothing": false,
+      "strokeWidth": 1,
+      "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAACL0lEQVRoQ+2Zu0sDMRzHk6sOCkW7CIqT0I52UkGKDwQLgop1cxEcdFME0b/BF+IgUl84iGN9UUGkiCCCuqijXR2kDg4tLlZP7nf9pbF3Phbv0jSZQkKbfH7f5PtLcpSUWKFC8caSujkffZBEArH/mJsC/o+o8v+5HFgCFSceJq3BllFhBczLXyoK3/k6YZkHN9dy+BKZlt2SlhqYwb2cMdPSL/ygME0dy6ewAiaELFy2g8JTTxulobB0wLxRpWeaQE3v7E3+4MHSEeaoIndpBSy7wrwzYwq6762H9Rs00pNsSzo93fwG+3buuhyBM4e+LLbJB8wZFQM+qgaFwbykU9gGGP2YhpJiA6PjfnuntblQ86kIFZYamJ2VQ0mK9UWtDpinWs/FVhgdlznsH55IeGA8VeHPFLBoj3i8wqgS5NKCclvV1k01z4nR3Hj0CL2GQRWNwmhWIwO7lkX85Vyc6+WBT+MfbL8KDcw7MlK+be8z4LGDV7OukwShpMuobu0NQdNw/07Yo2mgcLS/sviAO54PYdKollH/CXh8fSVMPBSAeUcWWmF+vzaMZgDY25Jf0ukrU81oX0WCUAoKYxBW+yrCGjWB2cU+4md7mG8T5qRVeEgA42HvToToNT2mGaXiCUJMYGybp7W2wBa4iN/9PGx9RbT4VEGDzoBZx3s2TDxloDArdnAiAP+GV8z9Yn1McyCSCtiBILs6hFLY1fA7MLhS2IEguzqEUtjV8Dsw+Cer36Q4iU7tqgAAAABJRU5ErkJggg==",
+      "tooltipMeasures": [],
+      "type": "stacked_columns",
+      "uaColor": [],
+      "uaShape": [],
+      "uaSize": [],
+      "uaTooltip": [],
+      "uaXDimension": [],
+      "uaYDimension": [],
+      "useLiveProcessingIfAvailable": true,
+      "userEditedName": true,
+      "valuesInChartDisplayOptions": {},
+      "variant": "normal",
+      "xAxisFormatting": {
+        "isLogScale": false
+      },
+      "xAxisMode": "NORMAL",
+      "xDimension": [],
+      "xMeasure": [],
+      "yAxesFormatting": [
+        {
+          "isLogScale": false
+        }
+      ],
+      "yAxisMode": "NORMAL",
+      "yDimension": [],
+      "yMeasure": []
+    },
+    "engineType": "LINO",
+    "refreshableSelection": {
+      "_refreshTrigger": 0,
+      "autoRefreshSample": false,
+      "selection": {
+        "filter": {
+          "distinct": false,
+          "enabled": false
+        },
+        "latestPartitionsN": 1,
+        "maxReadUncompressedBytes": -1,
+        "maxRecords": 30000,
+        "partitionSelectionMethod": "ALL",
+        "samplingMethod": "HEAD_SEQUENTIAL",
+        "targetRatio": 0.02,
+        "useMemTable": false,
+        "withinFirstN": -1
+      }
+    }
+  },
+  "shortDesc": "",
+  "tags": [],
+  "type": "chart",
+  "versionTag": {
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1486131181575,
+    "versionNumber": 0
+  }
+}

@@ -1,0 +1,107 @@
+{
+  "checklists": {},
+  "creationTag": {
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1431077414478
+  },
+  "description": "",
+  "listed": true,
+  "name": "Sum of revenue_loss by State",
+  "owner": "admin",
+  "params": {
+    "datasetSmartName": "revenue_loss",
+    "def": {
+      "colorOptions": {
+        "colorPalette": "default",
+        "singleColor": "#659a88",
+        "transparency": 0.9
+      },
+      "filters": [],
+      "genericDimension0": [
+        {
+          "column": "State",
+          "filters": [],
+          "generateOthersCategory": true,
+          "isA": "dimension",
+          "maxValues": 50,
+          "numParams": {
+            "emptyBinsMode": "ZEROS"
+          },
+          "oneTickPerBin": "NO",
+          "possibleNewFilters": [
+            {
+              "group": "Measure values",
+              "label": "Sum of revenue_loss",
+              "measureFilterId": 0,
+              "type": "MEASURE_VALUES"
+            }
+          ],
+          "possibleSorts": [
+            {
+              "label": "Natural ordering",
+              "sortAscending": true,
+              "type": "NATURAL"
+            },
+            {
+              "label": "Sum of revenue_loss, descending",
+              "measureIdx": 0,
+              "type": "AGGREGATION"
+            },
+            {
+              "label": "Sum of revenue_loss, ascending",
+              "measureIdx": 0,
+              "sortAscending": true,
+              "type": "AGGREGATION"
+            }
+          ],
+          "sort": {
+            "label": "Natural ordering",
+            "sortAscending": true,
+            "type": "NATURAL"
+          },
+          "type": "ALPHANUM"
+        }
+      ],
+      "genericDimension1": [],
+      "genericMeasures": [
+        {
+          "column": "revenue_loss",
+          "displayAxis": "axis1",
+          "displayType": "column",
+          "displayed": true,
+          "function": "SUM",
+          "isA": "measure",
+          "type": "NUMERICAL"
+        }
+      ],
+      "includeZero": true,
+      "name": "Sum of revenue_loss by State",
+      "showLegend": true,
+      "smoothing": false,
+      "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAACnklEQVRoQ+2Yv04CQRDGZyHRwlj4AmLlA1gY7WzFo7CyMTEWamwsodSYmAitHWhiYeGfxMRAb+k7WAkJJmpho0YDsu4iS8Z1924X7pDDo7rcHTvzm++b2QUC/+xDguZNZEq0nHUCj2PKEXgiEbCpFAG957vCsqK2Cov3E+nSSTnnLPvNHSgwS/6SJbxo08NtYKn3bQunK1TQwJQHjoBdfIoVxsX6FwqHFtjG1gOhcKiBvXoJP+fXol3F4JrIlM7unqvLkN+oqVrZb4XlfK2ndK+BhTu84urmYEfAQimukldgY4VvJ2li+uWpnEuN4WRlhb2AE+niDVtjlr/HvttgOcZU64l7RgoHBjzzelXedxa6AkYHlAj4W/Ufv9Z6prCwZntocUv7pDCbjNuVrLMbmMLy5NX1DJ7SqIfOm1PaAtgrHurzHz3M4l+zZ3P4aNuRwl4JiAB/DTyeLp4SQpZcgcczxXwlm1qXVcPTslvgz0bsiAAdInG6aTK0vOLpFI6AWWV+WbobhfH21doX2yct3MN9pzABclynMFzNObzpm6PdxNL9AEwbNFt5j+/AQfLD2NIYWD4Pq87HQj3xrPZcHbnPb7zphpYfCqvO3HxbokAuKg+PK3C8+m4F3AAYZX7fIxSmmPGb1hdHS90QcSuOH5amQNfZQC0I1+F8WtfdAccobLHF5/sFWC66Dhho/RAgxjSDNaNtiVuaKywD461KBFdVW+UGPxR2A26tT7ml+xoYKCTxwUDV97jQClXxTtA7YJX6JkMrAkb/kshFdGuVjizNFWGTsGDTwzoLyhNd18NCYdUP/1ABq5Ll99j+do73YVtg3bp/rnAnwB4wJo/thpaflg4FsEkJw/6O0R8AYYfE+UfAg6SmiiVSeNAV/gLl3qZlloF8SAAAAABJRU5ErkJggg==",
+      "type": "stacked_columns",
+      "userEditedName": true,
+      "valuesInChartDisplayOptions": {},
+      "variant": "normal",
+      "xAxisFormatting": {},
+      "yAxesFormatting": [
+        {}
+      ]
+    },
+    "refreshableSelection": {
+      "_refreshTrigger": 0,
+      "autoRefreshSample": false,
+      "selection": {
+        "maxRecords": 30000,
+        "partitionSelectionMethod": "ALL",
+        "samplingMethod": "HEAD_SEQUENTIAL",
+        "targetRatio": 0.02
+      }
+    }
+  },
+  "shortDesc": "",
+  "tags": [],
+  "type": "chart"
+}

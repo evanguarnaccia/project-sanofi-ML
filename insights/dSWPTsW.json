@@ -1,0 +1,207 @@
+{
+  "checklists": {
+    "checklists": []
+  },
+  "creationTag": {
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1486131202179,
+    "versionNumber": 0
+  },
+  "dashboardCreationId": "4A29MtD",
+  "description": "",
+  "listed": false,
+  "name": "Count by State and cluster_labels",
+  "owner": "admin",
+  "params": {
+    "datasetSmartName": "customers_within_segments",
+    "def": {
+      "axis1LogScale": false,
+      "axis2LogScale": false,
+      "boxplotBreakdownDim": [],
+      "boxplotValue": [],
+      "bubblesOptions": {
+        "defaultRadius": 5.0
+      },
+      "colorMeasure": [],
+      "colorOptions": {
+        "ccScaleMode": "NORMAL",
+        "colorPalette": "default",
+        "singleColor": "#659a88",
+        "transparency": 0.9
+      },
+      "colorPaletteType": "LINEAR",
+      "computeMode": "NORMAL",
+      "disableSafetyLimits": false,
+      "filters": [],
+      "genericDimension0": [
+        {
+          "column": "State",
+          "filters": [],
+          "generateOthersCategory": true,
+          "isA": "dimension",
+          "maxValues": 50,
+          "numParams": {
+            "emptyBinsMode": "ZEROS"
+          },
+          "oneTickPerBin": "NO",
+          "possibleSorts": [
+            {
+              "label": "Natural ordering",
+              "sortAscending": true,
+              "type": "NATURAL"
+            },
+            {
+              "label": "Count of records, descending",
+              "measureIdx": 0,
+              "type": "AGGREGATION"
+            },
+            {
+              "label": "Count of records, ascending",
+              "measureIdx": 0,
+              "sortAscending": true,
+              "type": "AGGREGATION"
+            }
+          ],
+          "sort": {
+            "label": "Natural ordering",
+            "sortAscending": true,
+            "type": "NATURAL"
+          },
+          "type": "ALPHANUM"
+        }
+      ],
+      "genericDimension1": [
+        {
+          "column": "cluster_labels",
+          "filters": [],
+          "generateOthersCategory": true,
+          "isA": "dimension",
+          "maxValues": 20,
+          "numParams": {
+            "emptyBinsMode": "ZEROS"
+          },
+          "oneTickPerBin": "NO",
+          "possibleSorts": [
+            {
+              "label": "Natural ordering",
+              "sortAscending": true,
+              "type": "NATURAL"
+            },
+            {
+              "label": "Count of records, descending",
+              "measureIdx": 0,
+              "type": "AGGREGATION"
+            },
+            {
+              "label": "Count of records, ascending",
+              "measureIdx": 0,
+              "sortAscending": true,
+              "type": "AGGREGATION"
+            }
+          ],
+          "sort": {
+            "label": "Count of records, descending",
+            "measureIdx": 0,
+            "type": "AGGREGATION"
+          },
+          "type": "ALPHANUM"
+        }
+      ],
+      "genericMeasures": [
+        {
+          "computeModeDim": 1,
+          "displayAxis": "axis1",
+          "displayType": "column",
+          "displayed": true,
+          "function": "COUNT",
+          "isA": "measure",
+          "type": "NUMERICAL"
+        }
+      ],
+      "geometry": [],
+      "groupDimension": [],
+      "hexbinNumber": 0,
+      "hexbinRadius": 0,
+      "includeZero": true,
+      "mapGridOptions": {
+        "gridLatDeg": 0.6,
+        "gridLonDeg": 0.6
+      },
+      "mapOptions": {
+        "lockSquareGrid": false,
+        "tilesLayer": "cartodb-positron"
+      },
+      "name": "Count by State and cluster_labels",
+      "pieOptions": {
+        "donutHoleSize": 50.0
+      },
+      "scatterOptions": {
+        "equalScales": false,
+        "identityLine": false
+      },
+      "showLegend": true,
+      "showXAxis": false,
+      "sizeMeasure": [],
+      "smoothing": false,
+      "strokeWidth": 1,
+      "thumbnailData": "data:image/png;base64,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",
+      "tooltipMeasures": [],
+      "type": "stacked_columns",
+      "uaColor": [],
+      "uaShape": [],
+      "uaSize": [],
+      "uaTooltip": [],
+      "uaXDimension": [],
+      "uaYDimension": [],
+      "useLiveProcessingIfAvailable": true,
+      "userEditedName": true,
+      "valuesInChartDisplayOptions": {},
+      "variant": "stacked_100",
+      "xAxisFormatting": {
+        "isLogScale": false
+      },
+      "xAxisMode": "NORMAL",
+      "xDimension": [],
+      "xMeasure": [],
+      "yAxesFormatting": [
+        {
+          "isLogScale": false
+        }
+      ],
+      "yAxisMode": "NORMAL",
+      "yDimension": [],
+      "yMeasure": []
+    },
+    "engineType": "LINO",
+    "refreshableSelection": {
+      "_refreshTrigger": 0,
+      "autoRefreshSample": false,
+      "selection": {
+        "filter": {
+          "distinct": false,
+          "enabled": false
+        },
+        "latestPartitionsN": 1,
+        "maxReadUncompressedBytes": -1,
+        "maxRecords": 30000,
+        "partitionSelectionMethod": "ALL",
+        "samplingMethod": "HEAD_SEQUENTIAL",
+        "targetRatio": 0.02,
+        "useMemTable": false,
+        "withinFirstN": -1
+      }
+    }
+  },
+  "shortDesc": "",
+  "tags": [],
+  "type": "chart",
+  "versionTag": {
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1486131202179,
+    "versionNumber": 0
+  }
+}

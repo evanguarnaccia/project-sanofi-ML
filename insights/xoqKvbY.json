@@ -1,0 +1,28 @@
+{
+  "type": "saved-model_report",
+  "params": {
+    "savedModelSmartId": "5HExUjQ1"
+  },
+  "owner": "admin",
+  "listed": false,
+  "name": "Full report of model Churn prediction model ( RANDOM_FOREST)",
+  "dashboardCreationId": "4A29MtD",
+  "versionTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1486142279766
+  },
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1486142279766
+  },
+  "tags": [],
+  "checklists": {
+    "checklists": []
+  }
+}

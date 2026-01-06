@@ -1,0 +1,119 @@
+{
+  "checklists": {},
+  "creationTag": {
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1431018903203
+  },
+  "description": "",
+  "listed": true,
+  "name": "Sum of revenue_loss by cluster_labels",
+  "owner": "admin",
+  "params": {
+    "datasetSmartName": "revenue_loss",
+    "def": {
+      "axis1LogScale": false,
+      "axis2LogScale": false,
+      "boxplotBreakdownDim": [],
+      "boxplotValue": [],
+      "bubblesOptions": {
+        "defaultRadius": 5.0
+      },
+      "colorMeasure": [],
+      "colorOptions": {
+        "ccScaleMode": "NORMAL",
+        "colorPalette": "default",
+        "singleColor": "#659a88",
+        "transparency": 0.9
+      },
+      "disableSafetyLimits": false,
+      "filters": [],
+      "genericDimension0": [
+        {
+          "column": "cluster_labels",
+          "filters": [],
+          "generateOthersCategory": true,
+          "isA": "dimension",
+          "maxValues": 20,
+          "numParams": {
+            "emptyBinsMode": "ZEROS"
+          },
+          "oneTickPerBin": "NO",
+          "sort": {
+            "label": "Natural ordering",
+            "sortAscending": true,
+            "type": "NATURAL"
+          },
+          "type": "ALPHANUM"
+        }
+      ],
+      "genericDimension1": [],
+      "genericMeasures": [
+        {
+          "column": "revenue_loss",
+          "computeMode": "NORMAL",
+          "displayAxis": "axis1",
+          "displayType": "column",
+          "displayed": true,
+          "function": "SUM",
+          "isA": "measure",
+          "type": "NUMERICAL"
+        }
+      ],
+      "geometry": [],
+      "groupDimension": [],
+      "hexbinRadius": 20,
+      "includeZero": true,
+      "mapGridOptions": {
+        "gridLatDeg": 0.6,
+        "gridLonDeg": 0.6
+      },
+      "mapOptions": {
+        "lockSquareGrid": false,
+        "tilesLayer": "mapquest-std"
+      },
+      "name": "Sum of revenue_loss by cluster_labels",
+      "showLegend": true,
+      "sizeMeasure": [],
+      "smoothing": false,
+      "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAAA90lEQVRoQ+2ZQQrCMBREE3oLUbyKB9CbuFQ8g7j1DF6gXkgEzyFdVEJQMsUJBnzdtR1++ufPI4XE8GdXrNnv8nB95PVvx/Ws5pql2jRccmjKeyYcQiDSUyJj0MKwwcRXCRiGYWeetFowrPmkqWAYhrWkOFUw7HQThmHYmSetFgxrPmkqGIZhLSlOFQw73YRhGHbmSasFw5pPmgqGYVhLilMFw6Obi31/Tp29nzbb9H6+61ddFy/ps/wYxcVwXueb45qPEy4t0lrDpe8dB/PzhpUUKM0omqFpGh5HX3LMFWkm/GavLpk/DEnREGnnBt9qrao/Hi02/QQcMhQ4DX7XvgAAAABJRU5ErkJggg==",
+      "tooltipMeasures": [],
+      "type": "multi_columns_lines",
+      "uaColor": [],
+      "uaSize": [],
+      "uaTooltip": [],
+      "uaXDimension": [],
+      "uaYDimension": [],
+      "useLiveProcessingIfAvailable": true,
+      "userEditedName": true,
+      "valuesInChartDisplayOptions": {},
+      "variant": "normal",
+      "xAxisFormatting": {
+        "isLogScale": false
+      },
+      "xDimension": [],
+      "xMeasure": [],
+      "yAxesFormatting": [
+        {
+          "isLogScale": false
+        }
+      ],
+      "yDimension": [],
+      "yMeasure": []
+    },
+    "refreshableSelection": {
+      "_refreshTrigger": 0,
+      "autoRefreshSample": false,
+      "selection": {
+        "maxRecords": 30000,
+        "partitionSelectionMethod": "ALL",
+        "samplingMethod": "HEAD_SEQUENTIAL",
+        "targetRatio": 0.02
+      }
+    }
+  },
+  "shortDesc": "",
+  "tags": [],
+  "type": "chart"
+}

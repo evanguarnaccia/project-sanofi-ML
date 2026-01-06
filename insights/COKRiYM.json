@@ -1,0 +1,154 @@
+{
+  "checklists": {},
+  "creationTag": {
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1431018291353
+  },
+  "description": "",
+  "listed": true,
+  "name": "Churners by cluster_labels",
+  "owner": "admin",
+  "params": {
+    "datasetSmartName": "customers_within_segments",
+    "def": {
+      "colorOptions": {
+        "colorPalette": "default",
+        "singleColor": "#659a88",
+        "transparency": 0.9
+      },
+      "filters": [],
+      "genericDimension0": [
+        {
+          "column": "cluster_labels",
+          "filters": [],
+          "generateOthersCategory": true,
+          "isA": "dimension",
+          "maxValues": 20,
+          "numParams": {
+            "emptyBinsMode": "ZEROS"
+          },
+          "oneTickPerBin": "NO",
+          "possibleNewFilters": [
+            {
+              "group": "Measure values",
+              "label": "Count of records",
+              "measureFilterId": 0,
+              "type": "MEASURE_VALUES"
+            }
+          ],
+          "possibleSorts": [
+            {
+              "label": "Natural ordering",
+              "sortAscending": true,
+              "type": "NATURAL"
+            },
+            {
+              "label": "Count of records, descending",
+              "measureIdx": 0,
+              "type": "AGGREGATION"
+            },
+            {
+              "label": "Count of records, ascending",
+              "measureIdx": 0,
+              "sortAscending": true,
+              "type": "AGGREGATION"
+            }
+          ],
+          "sort": {
+            "label": "Natural ordering",
+            "sortAscending": true,
+            "type": "NATURAL"
+          },
+          "type": "ALPHANUM"
+        }
+      ],
+      "genericDimension1": [
+        {
+          "column": "Churn",
+          "filters": [],
+          "generateOthersCategory": true,
+          "isA": "dimension",
+          "maxValues": 100,
+          "numParams": {
+            "binSize": 100,
+            "emptyBinsMode": "ZEROS",
+            "mode": "TREAT_AS_ALPHANUM",
+            "nbBins": 5
+          },
+          "oneTickPerBin": "NO",
+          "possibleNewFilters": [
+            {
+              "group": "Measure values",
+              "label": "Count of records",
+              "measureFilterId": 0,
+              "type": "MEASURE_VALUES"
+            }
+          ],
+          "possibleSorts": [
+            {
+              "label": "Natural ordering",
+              "sortAscending": true,
+              "type": "NATURAL"
+            },
+            {
+              "label": "Count of records, descending",
+              "measureIdx": 0,
+              "type": "AGGREGATION"
+            },
+            {
+              "label": "Count of records, ascending",
+              "measureIdx": 0,
+              "sortAscending": true,
+              "type": "AGGREGATION"
+            }
+          ],
+          "sort": {
+            "label": "Natural ordering",
+            "sortAscending": true,
+            "type": "NATURAL"
+          },
+          "type": "NUMERICAL"
+        }
+      ],
+      "genericMeasures": [
+        {
+          "computeMode": "CUMULATIVE",
+          "displayAxis": "axis1",
+          "displayType": "column",
+          "displayed": true,
+          "function": "COUNT",
+          "isA": "measure",
+          "type": "NUMERICAL"
+        }
+      ],
+      "includeZero": true,
+      "name": "Churners by cluster_labels",
+      "showLegend": true,
+      "smoothing": false,
+      "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAAA/0lEQVRoQ+2ZwQ3CMAxFky4BN9aAGcoFlmGGLsOpOzBHb2wBipAgMUZyK1MgvN4afTm1/fuSNjH82RW1fI+n8yUf360XTYyxGJOapN9vlkW8OTVpfjmffJ6kIWGtUtV3eHXoC/sOXduEUFpaalKhhm77m5Ym4Q932OKm5LDnRpWOewmtOTtsScai+YqELQ/qpSFhBaJvt7RX9yxx6DAdvm2W1a2lF6UtVvTSYGksjaUfX8C8wxP30l5AssQBWkALaAGtewWm/uKxwMZLA7SAFtACWkArP2/yoqtXHCgNpaE0lIbSUDqvgEJFryXHEodlacyyJBpX1a168lBVhiKZK7PjnVa47c8bAAAAAElFTkSuQmCC",
+      "type": "stacked_columns",
+      "userEditedName": true,
+      "valuesInChartDisplayOptions": {},
+      "variant": "stacked_100",
+      "xAxisFormatting": {},
+      "yAxesFormatting": [
+        {}
+      ]
+    },
+    "refreshableSelection": {
+      "_refreshTrigger": 0,
+      "autoRefreshSample": false,
+      "selection": {
+        "maxRecords": 30000,
+        "partitionSelectionMethod": "ALL",
+        "samplingMethod": "HEAD_SEQUENTIAL",
+        "targetRatio": 0.02
+      }
+    }
+  },
+  "shortDesc": "",
+  "tags": [],
+  "type": "chart"
+}

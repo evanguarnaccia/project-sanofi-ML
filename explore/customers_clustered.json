@@ -1,0 +1,174 @@
+{
+  "charts": [
+    {
+      "def": {
+        "colorOptions": {
+          "colorPalette": "default",
+          "singleColor": "#659a88",
+          "transparency": 0.9
+        },
+        "filters": [],
+        "genericDimension0": [
+          {
+            "column": "cluster_labels",
+            "filters": [],
+            "generateOthersCategory": true,
+            "isA": "dimension",
+            "maxValues": 20,
+            "numParams": {
+              "emptyBinsMode": "ZEROS"
+            },
+            "oneTickPerBin": "NO",
+            "possibleNewFilters": [
+              {
+                "group": "Measure values",
+                "label": "Count of records",
+                "measureFilterId": 0,
+                "type": "MEASURE_VALUES"
+              }
+            ],
+            "possibleSorts": [
+              {
+                "label": "Natural ordering",
+                "sortAscending": true,
+                "type": "NATURAL"
+              },
+              {
+                "label": "Count of records, descending",
+                "measureIdx": 0,
+                "type": "AGGREGATION"
+              },
+              {
+                "label": "Count of records, ascending",
+                "measureIdx": 0,
+                "sortAscending": true,
+                "type": "AGGREGATION"
+              }
+            ],
+            "sort": {
+              "label": "Count of records, descending",
+              "measureIdx": 0,
+              "type": "AGGREGATION"
+            },
+            "type": "ALPHANUM"
+          }
+        ],
+        "genericDimension1": [
+          {
+            "column": "Churn",
+            "filters": [],
+            "generateOthersCategory": true,
+            "isA": "dimension",
+            "maxValues": 20,
+            "numParams": {
+              "emptyBinsMode": "ZEROS"
+            },
+            "oneTickPerBin": "NO",
+            "possibleNewFilters": [
+              {
+                "group": "Measure values",
+                "label": "Count of records",
+                "measureFilterId": 0,
+                "type": "MEASURE_VALUES"
+              }
+            ],
+            "possibleSorts": [
+              {
+                "label": "Natural ordering",
+                "sortAscending": true,
+                "type": "NATURAL"
+              },
+              {
+                "label": "Count of records, descending",
+                "measureIdx": 0,
+                "type": "AGGREGATION"
+              },
+              {
+                "label": "Count of records, ascending",
+                "measureIdx": 0,
+                "sortAscending": true,
+                "type": "AGGREGATION"
+              }
+            ],
+            "sort": {
+              "label": "Natural ordering",
+              "sortAscending": true,
+              "type": "NATURAL"
+            },
+            "type": "ALPHANUM"
+          }
+        ],
+        "genericMeasures": [
+          {
+            "displayAxis": "axis1",
+            "displayType": "column",
+            "displayed": true,
+            "function": "COUNT",
+            "isA": "measure",
+            "type": "NUMERICAL"
+          }
+        ],
+        "includeZero": true,
+        "name": "Count by cluster_labels and Churn",
+        "showLegend": true,
+        "smoothing": false,
+        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAABX0lEQVRoQ2NkGGGAEZt/1x1/8R9dPMhSAqvatceepTEyMs1EVs/475dKoLXcXXQz1h19IcbAxPASWfz/f4ZZwVYS6ZS6g1g3j3oYFNLEhhZIrVzZljRGRgaUGP7377fK4+7AoRPD8uVbMJL0w04frKmBlh4mxR3ERhJWT5BiESkenr//vgQHC9t9lPz6n3FBpJ1UJrY8TIo7BqWHxUvWiXEws2EUWo+6fLAWWqMeZmBgwJW1RmOYgYEBW1VK1zw8mqQZGBhADY/RPAwtskcLrdFCC1F7j7hSWr9h12f0xsvFBjdedLFhU0oTm99HPQxKAsSGFqm9JVrWw8S6eTSGR2MYWsxRoz88mqSp2LQczcM4WmWjhdZooTVaaKG2TkkZxBstpUdLadTUQ2xVQ0q5M1pKkxJao50HaIrENbc0WmiNFlqjhRbRs5jEluijpfRoKT0S2tLDeWEP1jw8nD0MAFuA5FbyhDQWAAAAAElFTkSuQmCC",
+        "type": "stacked_columns",
+        "userEditedName": true,
+        "valuesInChartDisplayOptions": {},
+        "variant": "stacked_100",
+        "xAxisFormatting": {},
+        "yAxesFormatting": [
+          {}
+        ]
+      },
+      "refreshableSelection": {
+        "_refreshTrigger": 0,
+        "autoRefreshSample": false,
+        "selection": {
+          "maxRecords": 30000,
+          "partitionSelectionMethod": "ALL",
+          "samplingMethod": "HEAD_SEQUENTIAL",
+          "targetRatio": 0.02
+        }
+      }
+    },
+    {
+      "def": {
+        "colorMeasure": [],
+        "colorOptions": {
+          "colorPalette": "default",
+          "singleColor": "#659a88",
+          "transparency": 0.9
+        },
+        "filters": [],
+        "includeZero": true,
+        "name": "Count by Churn",
+        "showLegend": true,
+        "sizeMeasure": [],
+        "smoothing": false,
+        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAAAm0lEQVRoQ+2aMQ5AUBBE/Vqldx+OoRdxGQcQ0ZBwKQdQoSQ2UeAGs2+L38+8l6l+iBzc1iZnXKzhjmqPpyOwOm0IQ1isAZQWA/qLA2EIizWA0mJAGS2URmmxBlBaDCgrjdIoLdYASosBZaVRGqXFGkBpMaCsNEqjtFgDpvQ8dE121OXzD0Is4yuOBZ7Gfsn3KnUTWJnoN5u7lb4ATBcQKdR32rsAAAAASUVORK5CYII=",
+        "type": "binned_xy",
+        "userEditedName": true,
+        "valuesInChartDisplayOptions": {},
+        "variant": "normal",
+        "xAxisFormatting": {},
+        "xDimension": [],
+        "yAxesFormatting": [
+          {}
+        ],
+        "yDimension": []
+      },
+      "refreshableSelection": {
+        "_refreshTrigger": 0,
+        "autoRefreshSample": false,
+        "selection": {
+          "maxRecords": 30000,
+          "partitionSelectionMethod": "ALL",
+          "samplingMethod": "HEAD_SEQUENTIAL",
+          "targetRatio": 0.02
+        }
+      }
+    }
+  ]
+}

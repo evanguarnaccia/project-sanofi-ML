@@ -1,0 +1,374 @@
+{
+  "charts": [], 
+  "chartsEngine": "LINO", 
+  "explorationFilters": [], 
+  "explorationSampling": {
+    "_refreshTrigger": 0, 
+    "autoRefreshSample": false, 
+    "selection": {
+      "maxRecords": 30000, 
+      "partitionSelectionMethod": "ALL", 
+      "samplingMethod": "HEAD_SEQUENTIAL", 
+      "targetRatio": 0.02
+    }
+  }, 
+  "exploreUIParams": {
+    "autoRefresh": true
+  }, 
+  "steps": [
+    {
+      "disabled": false, 
+      "params": {
+        "appliesTo": "SINGLE_COLUMN", 
+        "columns": [
+          "Churn?"
+        ], 
+        "input": "Churn?", 
+        "mapping": [
+          {
+            "from": ".", 
+            "to": ""
+          }
+        ], 
+        "matching": "SUBSTRING", 
+        "normalization": "EXACT", 
+        "output": "", 
+        "stopAfterFirstMatch": false
+      }, 
+      "preview": false, 
+      "type": "FindReplace"
+    }, 
+    {
+      "disabled": false, 
+      "params": {
+        "column": "State", 
+        "type": "Text"
+      }, 
+      "preview": false, 
+      "type": "TypeSetter"
+    }, 
+    {
+      "disabled": false, 
+      "params": {
+        "inCol": "Account Length", 
+        "outCol": "Account_Length", 
+        "renamings": [
+          {
+            "from": "Account Length", 
+            "to": "Account_Length"
+          }
+        ]
+      }, 
+      "preview": false, 
+      "type": "ColumnRenamer"
+    }, 
+    {
+      "disabled": false, 
+      "params": {
+        "inCol": "Area Code", 
+        "outCol": "Area_Code", 
+        "renamings": [
+          {
+            "from": "Area Code", 
+            "to": "Area_Code"
+          }
+        ]
+      }, 
+      "preview": false, 
+      "type": "ColumnRenamer"
+    }, 
+    {
+      "disabled": false, 
+      "params": {
+        "inCol": "Int'l Plan", 
+        "outCol": "Int'l_Plan", 
+        "renamings": [
+          {
+            "from": "Int'l Plan", 
+            "to": "Int'l_Plan"
+          }
+        ]
+      }, 
+      "preview": false, 
+      "type": "ColumnRenamer"
+    }, 
+    {
+      "disabled": false, 
+      "params": {
+        "inCol": "VMail Plan", 
+        "outCol": "VMail_Plan", 
+        "renamings": [
+          {
+            "from": "VMail Plan", 
+            "to": "VMail_Plan"
+          }
+        ]
+      }, 
+      "preview": false, 
+      "type": "ColumnRenamer"
+    }, 
+    {
+      "disabled": false, 
+      "params": {
+        "inCol": "VMail Message", 
+        "outCol": "VMail_Message", 
+        "renamings": [
+          {
+            "from": "VMail Message", 
+            "to": "VMail_Message"
+          }
+        ]
+      }, 
+      "preview": false, 
+      "type": "ColumnRenamer"
+    }, 
+    {
+      "disabled": false, 
+      "params": {
+        "inCol": "Day Mins", 
+        "outCol": "Day_Mins", 
+        "renamings": [
+          {
+            "from": "Day Mins", 
+            "to": "Day_Mins"
+          }
+        ]
+      }, 
+      "preview": false, 
+      "type": "ColumnRenamer"
+    }, 
+    {
+      "disabled": false, 
+      "params": {
+        "inCol": "Day Calls", 
+        "outCol": "Day_Calls", 
+        "renamings": [
+          {
+            "from": "Day Calls", 
+            "to": "Day_Calls"
+          }
+        ]
+      }, 
+      "preview": false, 
+      "type": "ColumnRenamer"
+    }, 
+    {
+      "disabled": false, 
+      "params": {
+        "inCol": "Day Charge", 
+        "outCol": "Day_Charge", 
+        "renamings": [
+          {
+            "from": "Day Charge", 
+            "to": "Day_Charge"
+          }
+        ]
+      }, 
+      "preview": false, 
+      "type": "ColumnRenamer"
+    }, 
+    {
+      "disabled": false, 
+      "params": {
+        "inCol": "Eve Mins", 
+        "outCol": "Eve_Mins", 
+        "renamings": [
+          {
+            "from": "Eve Mins", 
+            "to": "Eve_Mins"
+          }
+        ]
+      }, 
+      "preview": false, 
+      "type": "ColumnRenamer"
+    }, 
+    {
+      "disabled": false, 
+      "params": {
+        "inCol": "Eve Calls", 
+        "outCol": "Eve_Calls", 
+        "renamings": [
+          {
+            "from": "Eve Calls", 
+            "to": "Eve_Calls"
+          }
+        ]
+      }, 
+      "preview": false, 
+      "type": "ColumnRenamer"
+    }, 
+    {
+      "disabled": false, 
+      "params": {
+        "inCol": "Eve Charge", 
+        "outCol": "Eve_Charge", 
+        "renamings": [
+          {
+            "from": "Eve Charge", 
+            "to": "Eve_Charge"
+          }
+        ]
+      }, 
+      "preview": false, 
+      "type": "ColumnRenamer"
+    }, 
+    {
+      "disabled": false, 
+      "params": {
+        "inCol": "Night Mins", 
+        "outCol": "Night_Mins", 
+        "renamings": [
+          {
+            "from": "Night Mins", 
+            "to": "Night_Mins"
+          }
+        ]
+      }, 
+      "preview": false, 
+      "type": "ColumnRenamer"
+    }, 
+    {
+      "disabled": false, 
+      "params": {
+        "inCol": "Night Calls", 
+        "outCol": "Night_Calls", 
+        "renamings": [
+          {
+            "from": "Night Calls", 
+            "to": "Night_Calls"
+          }
+        ]
+      }, 
+      "preview": false, 
+      "type": "ColumnRenamer"
+    }, 
+    {
+      "disabled": false, 
+      "params": {
+        "inCol": "Night Charge", 
+        "outCol": "Night_Charge", 
+        "renamings": [
+          {
+            "from": "Night Charge", 
+            "to": "Night_Charge"
+          }
+        ]
+      }, 
+      "preview": false, 
+      "type": "ColumnRenamer"
+    }, 
+    {
+      "disabled": false, 
+      "params": {
+        "inCol": "Intl Mins", 
+        "outCol": "Intl_Mins", 
+        "renamings": [
+          {
+            "from": "Intl Mins", 
+            "to": "Intl_Mins"
+          }
+        ]
+      }, 
+      "preview": false, 
+      "type": "ColumnRenamer"
+    }, 
+    {
+      "disabled": false, 
+      "params": {
+        "inCol": "Intl Calls", 
+        "outCol": "Intl_Calls", 
+        "renamings": [
+          {
+            "from": "Intl Calls", 
+            "to": "Intl_Calls"
+          }
+        ]
+      }, 
+      "preview": false, 
+      "type": "ColumnRenamer"
+    }, 
+    {
+      "disabled": false, 
+      "params": {
+        "inCol": "Intl Charge", 
+        "outCol": "Intl_Charge", 
+        "renamings": [
+          {
+            "from": "Intl Charge", 
+            "to": "Intl_Charge"
+          }
+        ]
+      }, 
+      "preview": false, 
+      "type": "ColumnRenamer"
+    }, 
+    {
+      "disabled": false, 
+      "params": {
+        "inCol": "CustServ Calls", 
+        "outCol": "CustServ_Calls", 
+        "renamings": [
+          {
+            "from": "CustServ Calls", 
+            "to": "CustServ_Calls"
+          }
+        ]
+      }, 
+      "preview": false, 
+      "type": "ColumnRenamer"
+    }, 
+    {
+      "disabled": false, 
+      "params": {
+        "inCol": "Churn?", 
+        "outCol": "Churn", 
+        "renamings": [
+          {
+            "from": "Churn?", 
+            "to": "Churn"
+          }
+        ]
+      }, 
+      "preview": false, 
+      "type": "ColumnRenamer"
+    }, 
+    {
+      "disabled": false, 
+      "params": {
+        "inCol": "Int'l_Plan", 
+        "outCol": "Intl_Plan", 
+        "renamings": [
+          {
+            "from": "Int'l_Plan", 
+            "to": "Intl_Plan"
+          }
+        ]
+      }, 
+      "preview": false, 
+      "type": "ColumnRenamer"
+    }, 
+    {
+      "disabled": false, 
+      "params": {
+        "column": "total_Mins", 
+        "expression": "Day_Mins + Eve_Mins + Night_Mins + Intl_Mins"
+      }, 
+      "preview": false, 
+      "type": "CreateColumnWithGREL"
+    }, 
+    {
+      "disabled": false, 
+      "params": {
+        "column": "Total_Charge", 
+        "expression": "Day_Charge + Eve_Charge + Night_Charge + Intl_Charge"
+      }, 
+      "preview": false, 
+      "type": "CreateColumnWithGREL"
+    }
+  ], 
+  "tags": [], 
+  "vizSampling": {
+    "_refreshTrigger": 0, 
+    "autoRefreshSample": false
+  }
+}

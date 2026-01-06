@@ -1,0 +1,560 @@
+{
+  "charts": [
+    {
+      "copySelectionFromScript": true,
+      "def": {
+        "boxplotBreakdownDim": [],
+        "boxplotValue": [],
+        "bubblesOptions": {
+          "defaultRadius": 5,
+          "singleShape": "FILLED_CIRCLE"
+        },
+        "colorMeasure": [],
+        "colorOptions": {
+          "ccScaleMode": "NORMAL",
+          "colorPalette": "default",
+          "singleColor": "#659a88",
+          "transparency": 0.9
+        },
+        "colorPaletteType": "linear",
+        "computeMode": "NONE",
+        "filters": [],
+        "genericDimension0": [],
+        "genericDimension1": [],
+        "genericMeasures": [],
+        "geometry": [],
+        "groupDimension": [
+          {
+            "column": "Day_Charge",
+            "filters": [],
+            "generateOthersCategory": true,
+            "isA": "dimension",
+            "maxValues": 100,
+            "numParams": {
+              "binSize": 100,
+              "mode": "FIXED_NB",
+              "nbBins": 30
+            },
+            "oneTickPerBin": "NO",
+            "possibleNewFilters": [
+              {
+                "group": "Dimension values",
+                "label": "Value of the dimension",
+                "maxValue": 9999,
+                "minValue": 0,
+                "type": "DIMENSION_VALUES"
+              },
+              {
+                "group": "Measure values",
+                "label": "Average of Day_Charge",
+                "measureFilterId": 0,
+                "type": "MEASURE_VALUES"
+              },
+              {
+                "group": "Measure values",
+                "label": "Average of Total_Charge",
+                "measureFilterId": 1,
+                "type": "MEASURE_VALUES"
+              }
+            ],
+            "possibleSorts": [
+              {
+                "label": "Natural ordering",
+                "sortAscending": true,
+                "type": "NATURAL"
+              }
+            ],
+            "sort": {
+              "label": "Natural ordering",
+              "sortAscending": true,
+              "type": "NATURAL"
+            },
+            "type": "NUMERICAL"
+          }
+        ],
+        "hexbinRadius": 20,
+        "includeZero": false,
+        "mapGridOptions": {
+          "gridLatDeg": 0.5,
+          "gridLonDeg": 0.5
+        },
+        "mapOptions": {
+          "tilesLayer": "mapquest-std"
+        },
+        "name": "Avg. of Day_Charge by Day_Charge",
+        "pieOptions": {
+          "donutHoleSize": 50
+        },
+        "showLegend": true,
+        "sizeMeasure": [],
+        "smoothing": true,
+        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAACHElEQVRoQ+2ZPUjDQBTHFQRn3QVH174bxEFwrCKC4CDURds0FT9AHWyKaBQxdVDBzyZpdVEQFAQRdRQcpMO9ro6Cu7vgIB0E6Qdekrt4SZs17737/e7fkI+2tjTY0RpmX0LIBqV09bdjKIWT5laPpWZea4UZKuF4zoiWrKsEIo7V++WGQlgxs8+2mu5nuTwDLZywjPN8UpsghGQppenQCiuWMWontRsWwcqawCZMCLmjlA47lQ6ssFPRn/pACQPAHiIuuJUt9wVK2IuotAlP5bb6TlOZlx9AALhHxCEeslIlrNjbRVtZ7uUlJu2Dx+TRZtfZzMr7b0AAOETEWRHyzWtYxK6yzASAR0SMstR6qfE14YSZvcir6ZgXYK+9vgjHd/XOwqL+UQkLADlETHmVcNLvi7ATING1woQTprGUV7WdGqneIuKIaDHfbksDut72pOtf/yX017rCEq64rx4h4sxfMH6c5yKsWNsxO7l84Qew1zW4CNeCAIBLRBz3Csi737Vw6sTozk1rb7yBRM9zLVwnVc/vq4ESFg3LYz5zwoqZvbbVdNX3XkLIPqV0ngeMHzOYhAf359of5g8+/QASvQaTcCWEk+/AogWczncl7HQRmeqZhQkhK5TSTZng3bAwC7sZLmNPlXD5H7hCSnssw0YikfVSqbQmI7hbpsZOePrY6Cjmr2KIeOh2B2Xva+yEZU+HB18zYR67KPOMbyHmjildepvQAAAAAElFTkSuQmCC",
+        "tooltipMeasures": [],
+        "type": "lift",
+        "uaColor": [],
+        "uaSize": [],
+        "uaTooltip": [],
+        "uaXDimension": [],
+        "uaYDimension": [],
+        "userEditedName": true,
+        "valuesInChartDisplayOptions": {},
+        "variant": "normal",
+        "xAxisFormatting": {},
+        "xAxisMode": "NORMAL",
+        "xDimension": [],
+        "xMeasure": [
+          {
+            "column": "Day_Charge",
+            "displayAxis": "axis1",
+            "displayType": "column",
+            "displayed": true,
+            "function": "AVG",
+            "isA": "measure",
+            "type": "NUMERICAL"
+          }
+        ],
+        "yAxesFormatting": [
+          {}
+        ],
+        "yAxisMode": "NORMAL",
+        "yDimension": [],
+        "yMeasure": [
+          {
+            "column": "Total_Charge",
+            "displayAxis": "axis1",
+            "displayType": "column",
+            "displayed": true,
+            "function": "AVG",
+            "isA": "measure",
+            "type": "NUMERICAL"
+          }
+        ]
+      }
+    },
+    {
+      "copySelectionFromScript": true,
+      "def": {
+        "boxplotBreakdownDim": [
+          {
+            "column": "Eve_Mins",
+            "filters": [],
+            "generateOthersCategory": true,
+            "isA": "dimension",
+            "maxValues": 100,
+            "numParams": {
+              "binSize": 100,
+              "mode": "FIXED_SIZE",
+              "nbBins": 30
+            },
+            "oneTickPerBin": "NO",
+            "possibleSorts": [
+              {
+                "label": "Natural ordering",
+                "sortAscending": true,
+                "type": "NATURAL"
+              },
+              {
+                "label": "Count of records, descending",
+                "sortAscending": false,
+                "type": "COUNT"
+              },
+              {
+                "label": "Count of records, ascending",
+                "sortAscending": true,
+                "type": "COUNT"
+              }
+            ],
+            "sort": {
+              "label": "Count of records, descending",
+              "sortAscending": false,
+              "type": "COUNT"
+            },
+            "type": "NUMERICAL"
+          }
+        ],
+        "boxplotValue": [
+          {
+            "__justDragDropped": true,
+            "cacheable": true,
+            "column": "Night_Calls",
+            "label": "Night_Calls",
+            "type": "NUMERICAL"
+          }
+        ],
+        "bubblesOptions": {
+          "defaultRadius": 5,
+          "singleShape": "FILLED_CIRCLE"
+        },
+        "chartOptions": {},
+        "colorMeasure": [],
+        "colorOptions": {
+          "ccScaleMode": "NORMAL",
+          "singleColor": "#659a88",
+          "transparency": 0.75
+        },
+        "colorPaletteType": "linear",
+        "computeMode": "NONE",
+        "filters": [],
+        "genericDimension0": [],
+        "genericDimension1": [],
+        "genericMeasures": [],
+        "geometry": [],
+        "groupDimension": [],
+        "hexbinRadius": 20,
+        "includeZero": true,
+        "mapGridOptions": {
+          "gridLatDeg": 0.5,
+          "gridLonDeg": 0.5
+        },
+        "mapOptions": {
+          "tilesLayer": "mapquest-std"
+        },
+        "name": "New chart",
+        "pieOptions": {
+          "donutHoleSize": 50
+        },
+        "showLegend": true,
+        "sizeMeasure": [],
+        "smoothing": true,
+        "tooltipMeasures": [],
+        "type": "boxplots",
+        "uaColor": [],
+        "uaSize": [],
+        "uaTooltip": [],
+        "uaXDimension": [],
+        "uaYDimension": [],
+        "valuesInChartDisplayOptions": {},
+        "variant": "normal",
+        "xAxisFormatting": {},
+        "xAxisMode": "NORMAL",
+        "xDimension": [],
+        "xMeasure": [],
+        "yAxesFormatting": [
+          {}
+        ],
+        "yAxisMode": "NORMAL",
+        "yDimension": [],
+        "yMeasure": []
+      }
+    }
+  ],
+  "checklists": {
+    "checklists": []
+  },
+  "creationTag": {
+    "lastModifiedBy": {
+      "displayName": "Administrator",
+      "login": "admin"
+    },
+    "lastModifiedOn": 1431016659055,
+    "versionNumber": 0
+  },
+  "description": "## How we proceed ?\n\n1. We create a simple feature in the [_Script_](/projects/DKU_CHURN/analysis/a7QE8ig7/script/) tab.\n2. In order to capture the relevant patterns explaining the churn, we tested three common algorithms -- Random Forrest, Logistic Regression and Gradient Boosting Trees. See [here](/projects/DKU_CHURN/analysis/a7QE8ig7/ml/p/mHAYEcNw/settings/) for all available options for training.\n\n\n## Assessing models\n\n1. Once training is complete, the trained models that are available in the [_Models_](/projects/DKU_CHURN/analysis/a7QE8ig7/ml/p/mHAYEcNw/) tab with their scores and a small display on the most important hints for each model type.\n\n2. You have more details on each model. Take a look for example at the [coefficients](/projects/DKU_CHURN/analysis/a7QE8ig7/ml/p/mHAYEcNw/A-DKU_CHURN-a7QE8ig7-mHAYEcNw-s14-pp3-m1/report/#coefficients) of the linear model and [variables importance](/projects/DKU_CHURN/analysis/a7QE8ig7/ml/p/mHAYEcNw/A-DKU_CHURN-a7QE8ig7-mHAYEcNw-s14-pp1-m1/report/#variables_importance) of the random forest model.\n\n3. You can also create [charts](/projects/DKU_CHURN/analysis/a7QE8ig7/ml/p/mHAYEcNw/A-DKU_CHURN-a7QE8ig7-mHAYEcNw-s14-pp1-m1/charts/) on the validation set of a model.\n\n## Deployment\n\nThe best model (RANDOM FOREST) have been deployed in the [flow](/projects/DKU_CHURN/flow/) and is used to compute a churn likeliness score on each customer.",
+  "inputDatasetSmartName": "customers_within_segments",
+  "name": "Modeling churn on customers_within_segments",
+  "script": {
+    "analysisColumnData": {},
+    "charts": [
+      {
+        "$$hashKey": "0A2",
+        "chartOptions": {
+          "enableLegendEnabled": true,
+          "enabledMCModes": [
+            [
+              "NORMAL",
+              "Normal"
+            ]
+          ],
+          "smoothingEnabled": false,
+          "zeroEnabled": false
+        },
+        "data": {
+          "boxplotBreakdownDim": [],
+          "boxplotValue": [],
+          "bubblesOptions": {
+            "defaultRadius": 5,
+            "singleShape": "FILLED_CIRCLE"
+          },
+          "colorMeasure": [],
+          "colorOptions": {
+            "ccScaleMode": "NORMAL",
+            "colorPalette": "default",
+            "singleColor": "#659a88",
+            "transparency": 0.9
+          },
+          "colorPaletteType": "linear",
+          "computeMode": "NONE",
+          "filters": [],
+          "genericDimension0": [],
+          "genericDimension1": [],
+          "genericMeasures": [],
+          "geometry": [],
+          "groupDimension": [
+            {
+              "column": "Day_Charge",
+              "filters": [],
+              "generateOthersCategory": true,
+              "isA": "dimension",
+              "maxValues": 100,
+              "numParams": {
+                "binSize": 100,
+                "mode": "FIXED_NB",
+                "nbBins": 30
+              },
+              "possibleNewFilters": [
+                {
+                  "group": "Dimension values",
+                  "label": "Value of the dimension",
+                  "maxValue": 9999,
+                  "minValue": 0,
+                  "type": "DIMENSION_VALUES"
+                },
+                {
+                  "group": "Measure values",
+                  "label": "Average of Day_Charge",
+                  "measureFilterId": 0,
+                  "type": "MEASURE_VALUES"
+                },
+                {
+                  "group": "Measure values",
+                  "label": "Average of Total_Charge",
+                  "measureFilterId": 1,
+                  "type": "MEASURE_VALUES"
+                }
+              ],
+              "possibleSorts": [
+                {
+                  "label": "Natural ordering",
+                  "sortAscending": true,
+                  "type": "NATURAL"
+                }
+              ],
+              "sort": {
+                "label": "Natural ordering",
+                "sortAscending": true,
+                "type": "NATURAL"
+              },
+              "type": "NUMERICAL"
+            }
+          ],
+          "hexbinRadius": 20,
+          "includeZero": false,
+          "mapGridOptions": {
+            "gridLatDeg": 0.5,
+            "gridLonDeg": 0.5
+          },
+          "mapOptions": {
+            "tilesLayer": "mapquest-std"
+          },
+          "name": "Avg. of Day_Charge by Day_Charge",
+          "pieOptions": {
+            "donutHoleSize": 50
+          },
+          "showLegend": true,
+          "sizeMeasure": [],
+          "smoothing": true,
+          "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAACHElEQVRoQ+2ZPUjDQBTHFQRn3QVH174bxEFwrCKC4CDURds0FT9AHWyKaBQxdVDBzyZpdVEQFAQRdRQcpMO9ro6Cu7vgIB0E6Qdekrt4SZs17737/e7fkI+2tjTY0RpmX0LIBqV09bdjKIWT5laPpWZea4UZKuF4zoiWrKsEIo7V++WGQlgxs8+2mu5nuTwDLZywjPN8UpsghGQppenQCiuWMWontRsWwcqawCZMCLmjlA47lQ6ssFPRn/pACQPAHiIuuJUt9wVK2IuotAlP5bb6TlOZlx9AALhHxCEeslIlrNjbRVtZ7uUlJu2Dx+TRZtfZzMr7b0AAOETEWRHyzWtYxK6yzASAR0SMstR6qfE14YSZvcir6ZgXYK+9vgjHd/XOwqL+UQkLADlETHmVcNLvi7ATING1woQTprGUV7WdGqneIuKIaDHfbksDut72pOtf/yX017rCEq64rx4h4sxfMH6c5yKsWNsxO7l84Qew1zW4CNeCAIBLRBz3Csi737Vw6sTozk1rb7yBRM9zLVwnVc/vq4ESFg3LYz5zwoqZvbbVdNX3XkLIPqV0ngeMHzOYhAf359of5g8+/QASvQaTcCWEk+/AogWczncl7HQRmeqZhQkhK5TSTZng3bAwC7sZLmNPlXD5H7hCSnssw0YikfVSqbQmI7hbpsZOePrY6Cjmr2KIeOh2B2Xva+yEZU+HB18zYR67KPOMbyHmjildepvQAAAAAElFTkSuQmCC",
+          "tooltipMeasures": [],
+          "type": "lift",
+          "uaColor": [],
+          "uaSize": [],
+          "uaTooltip": [],
+          "uaXDimension": [],
+          "uaYDimension": [],
+          "userEditedName": true,
+          "variant": "normal",
+          "xAxisMode": "NORMAL",
+          "xDimension": [],
+          "xMeasure": [
+            {
+              "column": "Day_Charge",
+              "displayAxis": "axis1",
+              "displayType": "column",
+              "displayed": true,
+              "function": "AVG",
+              "isA": "measure",
+              "type": "NUMERICAL"
+            }
+          ],
+          "yAxisMode": "NORMAL",
+          "yDimension": [],
+          "yMeasure": [
+            {
+              "column": "Total_Charge",
+              "displayAxis": "axis1",
+              "displayType": "column",
+              "displayed": true,
+              "function": "AVG",
+              "isA": "measure",
+              "type": "NUMERICAL"
+            }
+          ]
+        }
+      },
+      {
+        "$$hashKey": "0JL",
+        "chartOptions": {
+          "enableLegendEnabled": true,
+          "enabledMCModes": [
+            [
+              "NORMAL",
+              "Normal"
+            ]
+          ],
+          "smoothingEnabled": false,
+          "zeroEnabled": false
+        },
+        "data": {
+          "boxplotBreakdownDim": [
+            {
+              "column": "Eve_Mins",
+              "filters": [],
+              "generateOthersCategory": true,
+              "isA": "dimension",
+              "maxValues": 100,
+              "numParams": {
+                "binSize": 100,
+                "mode": "FIXED_SIZE",
+                "nbBins": 30
+              },
+              "oneTickPerBin": false,
+              "possibleSorts": [
+                {
+                  "label": "Natural ordering",
+                  "sortAscending": true,
+                  "type": "NATURAL"
+                },
+                {
+                  "label": "Count of records, descending",
+                  "sortAscending": false,
+                  "type": "COUNT"
+                },
+                {
+                  "label": "Count of records, ascending",
+                  "sortAscending": true,
+                  "type": "COUNT"
+                }
+              ],
+              "sort": {
+                "label": "Count of records, descending",
+                "sortAscending": false,
+                "type": "COUNT"
+              },
+              "type": "NUMERICAL"
+            }
+          ],
+          "boxplotValue": [
+            {
+              "__justDragDropped": true,
+              "cacheable": true,
+              "column": "Night_Calls",
+              "label": "Night_Calls",
+              "type": "NUMERICAL"
+            }
+          ],
+          "bubblesOptions": {
+            "defaultRadius": 5,
+            "singleShape": "FILLED_CIRCLE"
+          },
+          "chartOptions": {},
+          "colorMeasure": [],
+          "colorOptions": {
+            "ccScaleMode": "NORMAL",
+            "singleColor": "#659a88",
+            "transparency": 0.75
+          },
+          "colorPaletteType": "linear",
+          "computeMode": "NONE",
+          "filters": [],
+          "genericDimension0": [],
+          "genericDimension1": [],
+          "genericMeasures": [],
+          "geometry": [],
+          "groupDimension": [],
+          "hexbinRadius": 20,
+          "includeZero": true,
+          "mapGridOptions": {
+            "gridLatDeg": 0.5,
+            "gridLonDeg": 0.5
+          },
+          "mapOptions": {
+            "tilesLayer": "mapquest-std"
+          },
+          "name": "New chart",
+          "pieOptions": {
+            "donutHoleSize": 50
+          },
+          "showLegend": true,
+          "sizeMeasure": [],
+          "smoothing": true,
+          "tooltipMeasures": [],
+          "type": "boxplots",
+          "uaColor": [],
+          "uaSize": [],
+          "uaTooltip": [],
+          "uaXDimension": [],
+          "uaYDimension": [],
+          "variant": "normal",
+          "xAxisMode": "NORMAL",
+          "xDimension": [],
+          "xMeasure": [],
+          "yAxisMode": "NORMAL",
+          "yDimension": [],
+          "yMeasure": []
+        }
+      }
+    ],
+    "chartsEngine": "LINO",
+    "coloring": {
+      "individualColumns": [],
+      "scheme": "MEANING_AND_STATUS",
+      "valueColoringMode": "HASH"
+    },
+    "columnsSelection": {
+      "mode": "ALL"
+    },
+    "explorationFilters": [],
+    "explorationSampling": {
+      "_refreshTrigger": 0,
+      "autoRefreshSample": false,
+      "selection": {
+        "maxRecords": 30000,
+        "partitionSelectionMethod": "ALL",
+        "samplingMethod": "HEAD_SEQUENTIAL",
+        "targetRatio": 0.02
+      }
+    },
+    "exploreUIParams": {
+      "autoRefresh": true
+    },
+    "globalSearchQuery": "",
+    "previewMode": "ALL_ROWS",
+    "steps": [
+      {
+        "alwaysShowComment": false,
+        "disabled": false,
+        "metaType": "PROCESSOR",
+        "params": {
+          "column": "ratio_charge_min",
+          "expression": "Total_Charge / total_Mins"
+        },
+        "preview": true,
+        "type": "CreateColumnWithGREL"
+      }
+    ],
+    "tags": [],
+    "vizSampling": {
+      "_refreshTrigger": 0,
+      "autoRefreshSample": false
+    }
+  },
+  "tags": [],
+  "versionTag": {
+    "lastModifiedBy": {
+      "displayName": "Administrator",
+      "login": "admin"
+    },
+    "lastModifiedOn": 1468945637790,
+    "versionNumber": 35
+  }
+}

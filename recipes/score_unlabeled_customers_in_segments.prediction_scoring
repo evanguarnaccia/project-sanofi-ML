@@ -1,0 +1,25 @@
+{
+    "keptInputColumns": [],
+    "filterInputColumns": false,
+    "outputProbabilities": true,
+    "individualExplanationParams": {
+        "subChunkSize": 5000,
+        "method": "ICE",
+        "shapleyBackgroundSize": 100,
+        "nbExplanations": 3
+    },
+    "forcedClassifierThreshold": 0,
+    "overrideModelSpecifiedThreshold": false,
+    "sparkParams": {},
+    "gpuConfig": {
+        "params": {
+            "useGpu": true,
+            "gpuList": [
+                0
+            ],
+            "perGPUMemoryFraction": 0.5,
+            "gpuAllowGrowth": false
+        },
+        "disabledCapabilities": []
+    }
+}

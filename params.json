@@ -1,0 +1,291 @@
+{
+  "dashboardAuthorizations": {
+    "allAuthorized": false,
+    "authorizations": [
+      {
+        "objectRef": {
+          "objectId": "revenue_loss",
+          "objectType": "DATASET"
+        },
+        "modes": [
+          "READ"
+        ]
+      },
+      {
+        "objectRef": {
+          "objectId": "customers_prepared",
+          "objectType": "DATASET"
+        },
+        "modes": [
+          "READ"
+        ]
+      },
+      {
+        "objectRef": {
+          "objectId": "customers_within_segments",
+          "objectType": "DATASET"
+        },
+        "modes": [
+          "READ"
+        ]
+      },
+      {
+        "objectRef": {
+          "objectId": "unlabeled_customers_churn_prediction",
+          "objectType": "DATASET"
+        },
+        "modes": [
+          "READ"
+        ]
+      },
+      {
+        "objectRef": {
+          "objectId": "Correlations analysis on customers_prepared (admin)",
+          "objectType": "JUPYTER_NOTEBOOK"
+        },
+        "modes": [
+          "READ"
+        ]
+      },
+      {
+        "objectRef": {
+          "objectId": "UYFld51u",
+          "objectType": "SAVED_MODEL"
+        },
+        "modes": [
+          "READ"
+        ]
+      },
+      {
+        "objectRef": {
+          "objectId": "5HExUjQ1",
+          "objectType": "SAVED_MODEL"
+        },
+        "modes": [
+          "READ"
+        ]
+      }
+    ]
+  },
+  "exposedObjects": {
+    "objects": []
+  },
+  "projectType": "REGULAR",
+  "projectAppType": "REGULAR",
+  "hasSetupSection": false,
+  "owner": "admin",
+  "permissionsVersion": "V2",
+  "permissions": [],
+  "additionalDashboardUsers": {
+    "users": []
+  },
+  "tutorialProject": true,
+  "tutorialId": "DKU_CHURN",
+  "settings": {
+    "flowAnchorSourcesAndSinks": true,
+    "flowDisplaySettings": {
+      "zonesGraphRenderingAlgorithm": "DOT_OLDRANK",
+      "zonesGraphConnectZones": true,
+      "zonesGraphForJobs": true,
+      "respectTraversalOrder": false,
+      "zonesManualPositioning": false
+    },
+    "gitCommitMode": "AUTO",
+    "disableAutomaticTriggers": false,
+    "integrations": {
+      "integrations": []
+    },
+    "flowBuildSettings": {
+      "mergeSparkPipelines": false,
+      "pruneBeforeSparkPipelines": false,
+      "mergeSqlPipelines": false,
+      "pruneBeforeSqlPipelines": true,
+      "defaultRecipeHashPropagationBehavior": "ENABLED"
+    },
+    "sharingRequestsEnabled": "INHERIT",
+    "limitedVisibilityEnabled": "INHERIT",
+    "accessRequestsEnabled": "INHERIT",
+    "limitsSettings": {
+      "memSampleBytes": {
+        "soft": -1,
+        "hard": -1
+      },
+      "shakerMemTableBytes": {
+        "soft": -1,
+        "hard": -1
+      },
+      "attachmentBytes": {
+        "soft": -1,
+        "hard": -1
+      },
+      "sqlNotebookResultSetBytes": {
+        "soft": -1,
+        "hard": -1
+      },
+      "sqlScenarioResultSetBytes": {
+        "soft": -1,
+        "hard": -1
+      }
+    },
+    "relocationSettings": {
+      "sqlLikeRecipesInitializationMode": "RESOLVED_TABLE_REFERENCES"
+    },
+    "recipeEnginesPreferences": {
+      "forbiddenEngines": [],
+      "enginesPreferenceOrder": [],
+      "forbiddenByRecipeType": {},
+      "preferenceByRecipeType": {}
+    },
+    "codeEnvs": {
+      "python": {
+        "mode": "INHERIT",
+        "preventOverride": false
+      },
+      "r": {
+        "mode": "INHERIT",
+        "preventOverride": false
+      },
+      "julia": {
+        "mode": "INHERIT",
+        "preventOverride": false
+      }
+    },
+    "container": {
+      "containerMode": "NONE"
+    },
+    "containerForVisualRecipesWorkloads": {
+      "containerMode": "INHERIT"
+    },
+    "datasetsCreationSettings": {
+      "useGlobal": true,
+      "preferedStorageFormats": "CSV_ESCAPING_NOGZIP_FORHIVE,CSV_EXCEL_GZIP,PARQUET_HIVE",
+      "virtualizable": false
+    },
+    "hiveEngineCreationSettings": {
+      "useGlobal": true,
+      "executionEngine": "HIVECLI_LOCAL"
+    },
+    "sparkEngineCreationSettings": {
+      "useGlobal": true,
+      "executionEngine": "SPARK_SUBMIT",
+      "useGlobalMetastore": false
+    },
+    "impalaEngineCreationSettings": {
+      "useGlobal": true,
+      "streamMode": true
+    },
+    "wikiSettings": {
+      "promoted": false
+    },
+    "cluster": {
+      "clusterMode": "INHERIT"
+    },
+    "k8sCluster": {
+      "clusterMode": "INHERIT"
+    },
+    "virtualWebAppBackendSettings": {
+      "mode": "INHERIT",
+      "preventOverride": false,
+      "infra": {
+        "containerSelection": {
+          "containerMode": "INHERIT"
+        },
+        "overrideGlobalK8sExposition": false,
+        "exposition": {
+          "type": "local_process",
+          "params": {}
+        },
+        "scaling": {
+          "initialReplicas": 1,
+          "progressDeadlineSeconds": 600,
+          "hpa": false,
+          "hpaTargetCPUPercent": 0,
+          "hpaTargetMemoryPercent": 0,
+          "hpaMetrics": [],
+          "hpaMinPods": 0,
+          "hpaMaxPods": 0,
+          "hpaAnnotations": []
+        },
+        "podDisruptionBudget": {
+          "enable": false,
+          "isMaxUnavailable": false,
+          "minAvailable": "50%"
+        },
+        "deploymentModifier": {
+          "config": {}
+        }
+      }
+    },
+    "dkuProperties": [],
+    "autogeneratedDocumentationEnabled": true
+  },
+  "name": "Predicting churn",
+  "imgPattern": 4,
+  "metrics": {
+    "probes": [],
+    "engineConfig": {
+      "padRunsWithMetrics": false,
+      "hive": {
+        "active": true,
+        "extraConf": []
+      },
+      "basic": {},
+      "dss": {
+        "active": true,
+        "selection": {
+          "useMemTable": false,
+          "filter": {
+            "distinct": false,
+            "enabled": false
+          },
+          "partitionSelectionMethod": "ALL",
+          "latestPartitionsN": 1,
+          "ordering": {
+            "enabled": false,
+            "rules": []
+          },
+          "samplingMethod": "FULL",
+          "maxRecords": -1,
+          "targetRatio": 0.02,
+          "ascending": true,
+          "withinFirstN": -1,
+          "maxReadUncompressedBytes": -1
+        }
+      },
+      "sql": {
+        "active": true
+      },
+      "impala": {
+        "active": true
+      },
+      "spark": {
+        "active": true,
+        "extraConf": []
+      },
+      "python": {}
+    },
+    "displayedState": {
+      "columns": [],
+      "metrics": []
+    }
+  },
+  "metricsChecks": {
+    "runOnBuild": false,
+    "checks": [],
+    "displayedState": {
+      "checks": []
+    }
+  },
+  "description": "In this project you\u0027ll learn how to combine several models to build a churn prevention pipeline: segment customers, create insights to understand churn, and build a model to score new customers.\n\nThe data is from a major telecom operator. Just like pretty much any company in the world, they\u0027re concerned with keeping their customers happy, so they won\u0027t leave. In other words, they\u0027re looking at ways to reduce churn. To do this, they set up a task force of data analysts and people from business  teams who came up with several business goals to reduce churn.\n\n\u003ca name\u003d\"GOAL\"\u003e\n# Business goal\n\u003c/a\u003e\n\n- Get to know customers better, by accessing the data about their plans and usage, and getting in touch with interesting profiles\n- Target clients with more effective advertising based on their usage profiles\n- Retrieve customers with very high likeliness of churn so we could get in touch and offer them special deals before they even thought of leaving\n\n\u003ca name\u003d\"HOW\"\u003e\n#How do we do this ?\n\u003c/a\u003e\n\nWe\u0027ll be working on historic data from users on their phone usage, as well as various features from very large log files. The clients who have churned are indicated in the dataset.\n\nWe have another dataset with the same features built on current clients. That will be used to deploy the model and predict who is likely to churn.\n\nInstead of just answering the yes no question: \"will they churn,\" we\u0027ve decided to build two models instead of one:\n\n1. A \u003cstrong\u003efirst model that segments customers\u003c/strong\u003e into relevant groups (by using clustering algorithms), for targeting.\n2. A \u003cstrong\u003esecond model that uses these segments (clusters) to predict the churn likeliness\u003c/strong\u003e of each unlabelled customer (by using classification algorithms), so that business units can then check scores on a daily basis and target these customers.\n\n\u003ca name\u003d\"VISIT\"\u003e\n#Explore this sample project\n\u003c/a\u003e\n\n1. Look at the visual insights built to monitor churn and understand our customers behavior. We updated these as we went along by adding graph steps to our preparation scripts.\u003cbr/\u003e\nwhat could be a predictive business intelligence.\u003cbr/\u003e\n\u003cp class\u003d\"text-center\"\u003e\n\u003ca href\u003d\"/projects/DKU_CHURN/dashboards/\"  class\u003d\"btn btn-datasets-color btn-cta-big-mod\"\u003e\u003ci class\u003d\"icon-dku-sample_project\" class\u003d\"btn-cta-big-mod-icon\" /\u003e\u0026nbsp;Dashboards\u003c/a\u003e\u003cbr/\u003e\u003cbr/\u003e\n\u003c/p\u003e\n\n2. Check out the few steps of data preparation and machine learning that are needed for this advanced analytics operation. You\u0027ll notice cleaning recipes (in yellow), and the 2 models in green.\u003cbr/\u003e\n\u003cp class\u003d\"text-center\"\u003e\n\u003ca href\u003d\"/projects/DKU_CHURN/flow/\"  class\u003d\"btn btn-datasets-color btn-cta-big-mod\"\u003e\u003ci class\u003d\"icon-dku-sample_project\" class\u003d\"btn-cta-big-mod-icon\" /\u003e\u0026nbsp;Flow\u003c/a\u003e\u003cbr/\u003e\u003cbr/\u003e\n\u003c/p\u003e\n\n3. Look at the data preparation script to clean the customer data and create new features\n\u003cp class\u003d\"text-center\"\u003e\n\u003ca href\u003d\"/projects/DKU_CHURN/recipes/compute_customers_prepared/\"  class\u003d\"btn btn-datasets-color btn-cta-big-mod\"\u003e\u003ci class\u003d\"icon-dku-sample_project\" class\u003d\"btn-cta-big-mod-icon\" /\u003e\u0026nbsp;Visual Preparation\u003c/a\u003e\u003cbr/\u003e\u003cbr/\u003e\n\u003c/p\u003e\n\n4. Read here how we created the first model to segment our customers, and then deployed it on current customers\u0027 data as well as historical data.\u003cbr/\u003e\n\n\u003cp class\u003d\"text-center\"\u003e\n\u003ca href\u003d\"/projects/DKU_CHURN/savedmodels/UYFld51u/c/S-DKU_CHURN-UYFld51u-1486483327941/#summary\"  class\u003d\"btn btn-datasets-color btn-cta-big-mod\"\u003e\u003ci class\u003d\"icon-dku-sample_project\" class\u003d\"btn-cta-big-mod-icon\" /\u003e\u0026nbsp;Clustering model\u003c/a\u003e\u003cbr/\u003e\u003cbr/\u003e\n\u003c/p\u003e \n\n5. Have a look at how we then worked on our second algorithm, to predict churn behaviour.\u003cbr/\u003e\n\n\u003cp class\u003d\"text-center\"\u003e\n\u003ca href\u003d\"/projects/DKU_CHURN/savedmodels/5HExUjQ1/p/S-DKU_CHURN-5HExUjQ1-1511270705375/#summary\" class\u003d\"btn btn-datasets-color btn-cta-big-mod\"\u003e\u003ci class\u003d\"icon-dku-sample_project\" class\u003d\"btn-cta-big-mod-icon\" /\u003e\u0026nbsp;Churn model\u003c/a\u003e\u003cbr/\u003e\n\u003c/p\u003e\n\n\u003ca name\u003d\"MORE\"\u003e\n#Related content\n\u003c/a\u003e\n\n- This sample project is based on a real telecom dataset available here \u003cbr/\u003e\nUCI machine learning archives : [http://archive.ics.uci.edu/ml/](http://archive.ics.uci.edu/ml/).",
+  "shortDesc": "Segmenting  telecom customers, understanding churn, and scoring new customers.",
+  "tags": [
+    "sample",
+    "gallery",
+    "downloads",
+    "imported"
+  ],
+  "customFields": {},
+  "checklists": {
+    "checklists": []
+  }
+}

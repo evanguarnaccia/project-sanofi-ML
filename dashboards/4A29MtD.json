@@ -1,0 +1,387 @@
+{
+  "checklists": {
+    "checklists": []
+  },
+  "columnNumber": 36,
+  "creationTag": {
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1486131202171,
+    "versionNumber": 0
+  },
+  "listed": true,
+  "name": "Forecasting Customers that are likely to churn",
+  "owner": "admin",
+  "pages": [
+    {
+      "enableCrossFilters": true,
+      "filtersParams": {
+        "panelPosition": "TOP"
+      },
+      "grid": {
+        "tiles": [
+          {
+            "autoLoad": true,
+            "borderOptions": {
+              "color": "#D9D9D9",
+              "radius": 0,
+              "size": 1
+            },
+            "box": {
+              "height": 9,
+              "left": 21,
+              "top": 3,
+              "width": 15
+            },
+            "clickAction": "DO_NOTHING",
+            "displayMode": "INSIGHT",
+            "insightId": "EYZZSHS",
+            "insightType": "chart",
+            "resizeImageMode": "FIT_SIZE",
+            "showTitle": "YES",
+            "tileParams": {
+              "autoPlayAnimation": true,
+              "showLegend": false,
+              "showTooltips": true,
+              "showXAxis": true,
+              "showYAxis": true
+            },
+            "tileType": "INSIGHT",
+            "title": "Forecast Loss / Segments",
+            "titleOptions": {
+              "fontColor": "#000",
+              "fontSize": 13,
+              "showTitle": "YES",
+              "title": "Forecast Loss / Segments"
+            }
+          },
+          {
+            "autoLoad": true,
+            "borderOptions": {
+              "color": "#D9D9D9",
+              "radius": 0,
+              "size": 1
+            },
+            "box": {
+              "height": 15,
+              "left": 15,
+              "top": 3,
+              "width": 6
+            },
+            "clickAction": "DO_NOTHING",
+            "displayMode": "INSIGHT",
+            "insightId": "NCi2YiP",
+            "insightType": "chart",
+            "resizeImageMode": "FIT_SIZE",
+            "showTitle": "YES",
+            "tileParams": {
+              "autoPlayAnimation": true,
+              "showLegend": false,
+              "showTooltips": true,
+              "showXAxis": false,
+              "showYAxis": true
+            },
+            "tileType": "INSIGHT",
+            "title": "Forecast Loss / States",
+            "titleOptions": {
+              "fontColor": "#000",
+              "fontSize": 13,
+              "showTitle": "YES",
+              "title": "Forecast Loss / States"
+            }
+          },
+          {
+            "autoLoad": true,
+            "borderOptions": {
+              "color": "#D9D9D9",
+              "radius": 0,
+              "size": 1
+            },
+            "box": {
+              "height": 42,
+              "left": 0,
+              "top": 21,
+              "width": 12
+            },
+            "clickAction": "DO_NOTHING",
+            "displayMode": "INSIGHT",
+            "insightId": "vReATi5",
+            "insightType": "saved-model_report",
+            "resizeImageMode": "ORIG_SIZE",
+            "showTitle": "YES",
+            "tileParams": {
+              "displayMode": "bc_confusion"
+            },
+            "tileType": "INSIGHT",
+            "title": "Confusion Matrix",
+            "titleOptions": {
+              "fontColor": "#000",
+              "fontSize": 13,
+              "showTitle": "YES",
+              "title": "Confusion Matrix"
+            }
+          },
+          {
+            "autoLoad": true,
+            "borderOptions": {
+              "color": "#D9D9D9",
+              "radius": 0,
+              "size": 1
+            },
+            "box": {
+              "height": 6,
+              "left": 15,
+              "top": 18,
+              "width": 6
+            },
+            "clickAction": "DO_NOTHING",
+            "displayMode": "IMAGE",
+            "imageId": "dokkhqw",
+            "resizeImageMode": "FIT_SIZE",
+            "showTitle": "MOUSEOVER",
+            "tileType": "IMAGE",
+            "titleOptions": {
+              "fontColor": "#000",
+              "fontSize": 13,
+              "showTitle": "MOUSEOVER"
+            }
+          },
+          {
+            "autoLoad": true,
+            "borderOptions": {
+              "color": "#D9D9D9",
+              "radius": 0,
+              "size": 1
+            },
+            "box": {
+              "height": 18,
+              "left": 0,
+              "top": 3,
+              "width": 15
+            },
+            "clickAction": "DO_NOTHING",
+            "displayMode": "INSIGHT",
+            "insightId": "xoqKvbY",
+            "insightType": "saved-model_report",
+            "resizeImageMode": "ORIG_SIZE",
+            "showTitle": "YES",
+            "tileParams": {
+              "advancedOptions": {
+                "featureImportance": {
+                  "graphType": "absoluteFeatureImportance",
+                  "importanceDisplayMode": "variableImportance"
+                }
+              },
+              "displayMode": "feature_importance"
+            },
+            "tileType": "INSIGHT",
+            "title": "Variables importance",
+            "titleOptions": {
+              "fontColor": "#000",
+              "fontSize": 13,
+              "showTitle": "YES",
+              "title": "Variables importance"
+            }
+          },
+          {
+            "autoLoad": true,
+            "borderOptions": {
+              "color": "#D9D9D9",
+              "radius": 0,
+              "size": 1
+            },
+            "box": {
+              "height": 33,
+              "left": 12,
+              "top": 27,
+              "width": 24
+            },
+            "clickAction": "DO_NOTHING",
+            "displayMode": "INSIGHT",
+            "insightId": "reHKbCg",
+            "insightType": "saved-model_report",
+            "resizeImageMode": "ORIG_SIZE",
+            "showTitle": "NO",
+            "tileParams": {
+              "displayMode": "ensemble_summary"
+            },
+            "tileType": "INSIGHT",
+            "titleOptions": {
+              "fontColor": "#000",
+              "fontSize": 13,
+              "showTitle": "NO"
+            }
+          },
+          {
+            "autoLoad": true,
+            "backgroundOpacity": 0,
+            "borderOptions": {
+              "color": "#D9D9D9",
+              "radius": 0,
+              "size": 1
+            },
+            "box": {
+              "height": 3,
+              "left": 0,
+              "top": 0,
+              "width": 15
+            },
+            "clickAction": "DO_NOTHING",
+            "displayMode": "INSIGHT",
+            "resizeImageMode": "ORIG_SIZE",
+            "showTitle": "NO",
+            "tileParams": {
+              "isTransparent": true,
+              "text": "__Churn Prediction Model (Random Forest)__\n\nSee below some model insights\n\n\u25bc\u25bc\u25bc\u25bc\u25bc",
+              "textAlign": "CENTER"
+            },
+            "tileType": "TEXT",
+            "titleOptions": {
+              "fontColor": "#000",
+              "fontSize": 13,
+              "showTitle": "NO"
+            }
+          },
+          {
+            "autoLoad": true,
+            "backgroundOpacity": 0,
+            "borderOptions": {
+              "color": "#D9D9D9",
+              "radius": 0,
+              "size": 1
+            },
+            "box": {
+              "height": 3,
+              "left": 15,
+              "top": 0,
+              "width": 21
+            },
+            "clickAction": "DO_NOTHING",
+            "displayMode": "INSIGHT",
+            "resizeImageMode": "ORIG_SIZE",
+            "showTitle": "NO",
+            "tileParams": {
+              "isTransparent": true,
+              "text": "__Who are the customers that are likely to churn ?__\n\nand how much it will cost the company\n\n\u25bc\u25bc\u25bc\u25bc\u25bc",
+              "textAlign": "CENTER"
+            },
+            "tileType": "TEXT",
+            "titleOptions": {
+              "fontColor": "#000",
+              "fontSize": 13,
+              "showTitle": "NO"
+            }
+          },
+          {
+            "autoLoad": true,
+            "backgroundOpacity": 0,
+            "borderOptions": {
+              "color": "#D9D9D9",
+              "radius": 0,
+              "size": 1
+            },
+            "box": {
+              "height": 3,
+              "left": 21,
+              "top": 12,
+              "width": 15
+            },
+            "clickAction": "DO_NOTHING",
+            "displayMode": "INSIGHT",
+            "resizeImageMode": "ORIG_SIZE",
+            "showTitle": "NO",
+            "tileParams": {
+              "isTransparent": true,
+              "text": "Another dashboard is available to [understand this segmentation](/projects/DKU_CHURN/dashboards/Sf9Bzu5_segments-analysis/view/z3jCbn4).\n\n__Customers ranked by churn risk__\n\n\n\u25bc\u25bc\u25bc\u25bc\u25bc",
+              "textAlign": "CENTER"
+            },
+            "tileType": "TEXT",
+            "titleOptions": {
+              "fontColor": "#000",
+              "fontSize": 13,
+              "showTitle": "NO"
+            }
+          },
+          {
+            "autoLoad": true,
+            "backgroundOpacity": 0,
+            "borderOptions": {
+              "color": "#D9D9D9",
+              "radius": 0,
+              "size": 1
+            },
+            "box": {
+              "height": 3,
+              "left": 12,
+              "top": 24,
+              "width": 21
+            },
+            "clickAction": "DO_NOTHING",
+            "displayMode": "INSIGHT",
+            "resizeImageMode": "ORIG_SIZE",
+            "showTitle": "NO",
+            "tileParams": {
+              "isTransparent": true,
+              "text": "__Visualize the trees of the Random Forest__\n\nClick on the tree node to (un)fold\n\n\u25bc\u25bc\u25bc\u25bc\u25bc",
+              "textAlign": "CENTER"
+            },
+            "tileType": "TEXT",
+            "titleOptions": {
+              "fontColor": "#000",
+              "fontSize": 13,
+              "showTitle": "NO"
+            }
+          },
+          {
+            "autoLoad": true,
+            "borderOptions": {
+              "color": "#D9D9D9",
+              "radius": 0,
+              "size": 1
+            },
+            "box": {
+              "height": 9,
+              "left": 21,
+              "top": 15,
+              "width": 15
+            },
+            "clickAction": "OPEN_INSIGHT",
+            "displayMode": "INSIGHT",
+            "insightId": "Xq5BgdN",
+            "insightType": "chart",
+            "resizeImageMode": "ORIG_SIZE",
+            "showTitle": "YES",
+            "tileParams": {
+              "autoPlayAnimation": true,
+              "showLegend": true,
+              "showTooltips": true,
+              "showXAxis": true,
+              "showYAxis": true
+            },
+            "tileType": "INSIGHT",
+            "title": "Forecast total revenue loss by spender category, colored by cluster",
+            "titleOptions": {
+              "fontColor": "#000",
+              "fontSize": 13,
+              "showTitle": "YES",
+              "title": "Forecast total revenue loss by spender category, colored by cluster"
+            }
+          }
+        ]
+      },
+      "id": "T151Z94",
+      "showTitle": false,
+      "title": "Customers likely to churn"
+    }
+  ],
+  "showGrid": false,
+  "tags": [],
+  "versionTag": {
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1511271807353,
+    "versionNumber": 99
+  }
+}

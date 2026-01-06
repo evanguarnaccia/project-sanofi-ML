@@ -1,0 +1,120 @@
+{
+  "charts": [
+    {
+      "def": {
+        "colorOptions": {
+          "colorPalette": "default",
+          "singleColor": "#659a88",
+          "transparency": 0.9
+        },
+        "filters": [],
+        "genericDimension0": [
+          {
+            "column": "State",
+            "filters": [],
+            "generateOthersCategory": true,
+            "isA": "dimension",
+            "maxValues": 20,
+            "numParams": {
+              "emptyBinsMode": "ZEROS"
+            },
+            "oneTickPerBin": "NO",
+            "possibleNewFilters": [
+              {
+                "group": "Measure values",
+                "label": "Sum of Total_Charge",
+                "measureFilterId": 0,
+                "type": "MEASURE_VALUES"
+              },
+              {
+                "group": "Measure values",
+                "label": "Sum of expected_revenue",
+                "measureFilterId": 1,
+                "type": "MEASURE_VALUES"
+              }
+            ],
+            "possibleSorts": [
+              {
+                "label": "Natural ordering",
+                "sortAscending": true,
+                "type": "NATURAL"
+              },
+              {
+                "label": "Sum of Total_Charge, descending",
+                "measureIdx": 0,
+                "type": "AGGREGATION"
+              },
+              {
+                "label": "Sum of Total_Charge, ascending",
+                "measureIdx": 0,
+                "sortAscending": true,
+                "type": "AGGREGATION"
+              },
+              {
+                "label": "Sum of expected_revenue, descending",
+                "measureIdx": 1,
+                "type": "AGGREGATION"
+              },
+              {
+                "label": "Sum of expected_revenue, ascending",
+                "measureIdx": 1,
+                "sortAscending": true,
+                "type": "AGGREGATION"
+              }
+            ],
+            "sort": {
+              "label": "Sum of Total_Charge, descending",
+              "measureIdx": 0,
+              "type": "AGGREGATION"
+            },
+            "type": "ALPHANUM"
+          }
+        ],
+        "genericDimension1": [],
+        "genericMeasures": [
+          {
+            "column": "Total_Charge",
+            "displayAxis": "axis1",
+            "displayType": "column",
+            "displayed": true,
+            "function": "SUM",
+            "isA": "measure",
+            "type": "NUMERICAL"
+          },
+          {
+            "column": "expected_revenue",
+            "displayAxis": "axis1",
+            "displayType": "column",
+            "displayed": true,
+            "function": "SUM",
+            "isA": "measure",
+            "type": "NUMERICAL"
+          }
+        ],
+        "includeZero": true,
+        "name": "Sum of Total_Charge by State",
+        "showLegend": true,
+        "smoothing": false,
+        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAABF0lEQVRoQ+3ZOwrCQBAG4IlVQFJYmUKxshBS2lhZ2AUL8Sa+iFcICF4lRRDPINp5AbGxs0ijIEQGXNAQMq2T/NskZGeXmd0v1VhUsWGVud5OEKeXcPxTIwou043jhokIpEFa8QnwP7yd9Mm+J7bvd59cSulJo2DFYsXUQRr/sIhEVwBIg7QusWK2IA3SIhJdASAN0rrEitmCNEiLSHQFgDRI6xIrZgvSIC0i0RUA0iCtS6yYLUhnSZsG8ncjuRPEt0s4dsXj/MMA8YZNwCw6EjehXo+as9ofEn7nbzzMOz+nA9f6XrMY9s6tRt0z67PzvCaldDePTv5nnw0RLYv2bDr2dT3y2kV7cl5F85XpHuahK3W7NK/gN/f9RzjQHhAVAAAAAElFTkSuQmCC",
+        "type": "multi_columns_lines",
+        "userEditedName": true,
+        "valuesInChartDisplayOptions": {},
+        "variant": "normal",
+        "xAxisFormatting": {},
+        "yAxesFormatting": [
+          {}
+        ]
+      },
+      "refreshableSelection": {
+        "_refreshTrigger": 0,
+        "autoRefreshSample": false,
+        "selection": {
+          "maxRecords": 30000,
+          "partitionSelectionMethod": "ALL",
+          "samplingMethod": "HEAD_SEQUENTIAL",
+          "targetRatio": 0.02
+        }
+      }
+    }
+  ]
+}
