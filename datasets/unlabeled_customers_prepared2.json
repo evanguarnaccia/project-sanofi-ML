@@ -66,12 +66,12 @@
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1767839603935
+    "lastModifiedOn": 1767840232276
   },
   "tags": [],
   "params": {
     "connection": "filesystem_managed",
-    "path": "${projectKey}/customers_prepared23",
+    "path": "${projectKey}/unlabeled_customers_prepared2",
     "notReadyIfEmpty": false,
     "filesSelectionRules": {
       "mode": "ALL",
@@ -106,8 +106,7 @@
       {"name":"Intl Mins","type":"double"},
       {"name":"Intl Calls","type":"bigint"},
       {"name":"Intl Charge","type":"double"},
-      {"name":"CustServ Calls","type":"bigint"},
-      {"name":"Churn?","type":"string"}
+      {"name":"CustServ Calls","type":"bigint"}
     ],
     "userModified": true
   },

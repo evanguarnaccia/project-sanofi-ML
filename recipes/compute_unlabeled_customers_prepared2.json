@@ -63,7 +63,7 @@
     "main": {
       "items": [
         {
-          "ref": "unlabeled_customers_prepared1",
+          "ref": "unlabeled_customers_prepared2",
           "appendMode": false
         }
       ]
@@ -75,7 +75,7 @@
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1767839290411
+    "lastModifiedOn": 1767840232280
   },
   "tags": [],
   "customFields": {},
